@@ -1,10 +1,11 @@
 
 # pip install opencv-python
 from camera_controller_opencv import CameraControllerOpencv
-from camera_controller_picamera import CameraControllerPicamera
+#from camera_controller_picamera import CameraControllerPicamera
+from rest_sender import RestSender
 
-from database_inserter import DatabaseInserter
-from ssh_sender import SshSender
+# from database_inserter import DatabaseInserter
+# from ssh_sender import SshSender
 import time, threading
 
 
@@ -13,21 +14,19 @@ import time, threading
 #  https://pypi.python.org/pypi/MySQL-python/
 
 
-def capture_and_send(sftp):
+def capture_and_send():
 	wait = 40
 	try:
-		#cameraController = CameraControllerOpencv()
-		cameraController = CameraControllerPicamera()
+		cameraController = CameraControllerOpencv()
+		#cameraController = CameraControllerPicamera()
 		cameraController.take_a_shot()
 
 		filename = cameraController.filename
-		path = cameraController.path
-		path_remote = cameraController.path_remote
+		full_path = cameraController.path
 
 		try:
-			sftp.put(path,path_remote)
-			databaseInserter = DatabaseInserter()
-			databaseInserter.save(path_remote,filename)
+			restSender = RestSender()
+			restSender.send_shot(filename,full_path)			
 		except:
 			print("error")
 
@@ -35,12 +34,10 @@ def capture_and_send(sftp):
 		time.sleep(wait)
 	except:
 		print("an error ocurred, it will be atempted again")
-	threading.Timer(wait, capture_and_send(sftp)).start()
+	threading.Timer(wait, capture_and_send()).start()
 
 def main():
-	sshSender = SshSender()
-	sftp = sshSender.obtain_client()
-	capture_and_send(sftp)
+	capture_and_send()
 
 
 
