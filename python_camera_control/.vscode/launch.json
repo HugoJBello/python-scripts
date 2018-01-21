@@ -4,6 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\picam-viewr-back-angular2\\bin\\www"
+        },
         {
             "name": "External Terminal/Console",
             "type": "python",
@@ -30,20 +37,20 @@
             "envFile": "${workspaceFolder}/.env",
             "debugOptions": []
         },
-{
-    "name": "Python",
-    "type": "python",
-    "request": "launch",
-    "stopOnEntry": true,
-    "pythonPath": "${config:python.pythonPath}",
-    "program": "${file}",
-    "cwd": "${workspaceFolder}",
-    "env": {},
-    "envFile": "${workspaceFolder}/.env",
-    "debugOptions": [
-        "RedirectOutput"
-    ]
-},
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [
+                "RedirectOutput"
+            ]
+        },
         {
             "name": "Python",
             "type": "python",

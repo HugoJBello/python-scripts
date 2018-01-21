@@ -4,21 +4,16 @@ from camera_controller_opencv import CameraControllerOpencv
 #from camera_controller_picamera import CameraControllerPicamera
 from rest_sender import RestSender
 
-# from database_inserter import DatabaseInserter
-# from ssh_sender import SshSender
 import time, threading
+import os, errno
+from pathlib import Path
 
 
-# you need the mysql python adapter:
-# pip install mysqlclient-1.3.12-cp36-cp36m-win32.whl
-#  https://pypi.python.org/pypi/MySQL-python/
-
-
-def capture_and_send():
+def capture_and_send(base_dir):
 	wait = 40
 	try:
-		cameraController = CameraControllerOpencv()
-		#cameraController = CameraControllerPicamera()
+		cameraController = CameraControllerOpencv(base_dir)
+		#cameraController = CameraControllerPicamera(base_dir)
 		cameraController.take_a_shot()
 
 		filename = cameraController.filename
@@ -26,18 +21,31 @@ def capture_and_send():
 
 		try:
 			restSender = RestSender()
-			restSender.send_shot(filename,full_path)			
+			restSender.send_shot(filename,full_path)
+			os.remove(full_path)			
 		except:
 			print("error")
-
+			
 		print("waiting " + str(wait) + "seconds")
 		time.sleep(wait)
 	except:
 		print("an error ocurred, it will be atempted again")
-	threading.Timer(wait, capture_and_send()).start()
+		raise
+	threading.Timer(wait, capture_and_send(base_dir)).start()
+
+
+def create_base_directory(base_dir):
+	try:
+		os.makedirs(base_dir)
+		print("directory " + base_dir + " created")
+	except OSError as e:
+		if e.errno != errno.EEXIST:
+			raise
 
 def main():
-	capture_and_send()
+	base_dir = str(Path.home())+"/temp_picamera/"
+	create_base_directory(base_dir)
+	capture_and_send(base_dir)
 
 
 

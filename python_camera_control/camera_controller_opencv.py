@@ -3,14 +3,12 @@ import cv2
 # pip2 install opencv-python
 import platform
 import datetime
-
 class CameraControllerOpencv:
 
-	def __init__(self):
+	def __init__(self,base_dir):
 		self._filename = ""
 		self._path = ""
-		self.path_remote ="/media/pi/PINCHO/"
-		self.initial_path_windows = "C:/users/hugo/Documents/"
+		self.base_dir =base_dir
 		self.initial_path ="/home/pi/Documents/"
 
 	def take_a_shot(self):
@@ -27,18 +25,14 @@ class CameraControllerOpencv:
 		date=str(datetime.datetime.now())
 
 		self.filename = self.clean_filename(date)+ ".png"
-		if (platform.system()=='Windows'):
-			self.path = self.initial_path_windows + self.filename
-		else:
-			self.path = self.initial_path + self.filename
+		self.path = self.base_dir + self.filename
+
+		cv2.imwrite(self.path, camera_capture)
 		print("image saved locally as " + self.path)
 
-		self.path_remote = self.path_remote + self.filename
-		cv2.imwrite(self.path, camera_capture)
 		del(camera)
 
 	def get_image(self,camera):
-		# read is the easiest way to get a full image out of a VideoCapture object.
 		retval, im = camera.read()
 		return im
 
