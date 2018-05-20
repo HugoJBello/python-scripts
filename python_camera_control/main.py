@@ -1,7 +1,7 @@
 
 # pip install opencv-python
-from camera_controller_opencv import CameraControllerOpencv
-#from camera_controller_picamera import CameraControllerPicamera
+#from camera_controller_opencv import CameraControllerOpencv
+from camera_controller_picamera import CameraControllerPicamera
 from rest_sender import RestSender
 
 import time, threading
@@ -12,8 +12,8 @@ from pathlib import Path
 def capture_and_send(base_dir):
 	wait = 40
 	try:
-		cameraController = CameraControllerOpencv(base_dir)
-		#cameraController = CameraControllerPicamera(base_dir)
+		#cameraController = CameraControllerOpencv(base_dir)
+		cameraController = CameraControllerPicamera(base_dir)
 		cameraController.take_a_shot()
 
 		filename = cameraController.filename
