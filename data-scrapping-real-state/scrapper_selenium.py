@@ -18,8 +18,9 @@ class ScrapperSelenium:
     def get_data(self):
         for url in self.urls:
             driver = self.driver
-            driver.set_window_size(1000, 10000)
             driver.get(url) 
+            driver.set_window_position(-4000,0)
+
             self.get_data_from_page(driver)
             
 
@@ -41,6 +42,7 @@ class ScrapperSelenium:
             url=driver.find_elements_by_class_name("icon-arrow-right-after")[0].get_attribute("href")
             driver.get(url)
             self.get_data_from_page(driver)
+        else: driver.close()
 
     def is_next_page(self):
         next_button=self.driver.find_elements_by_class_name("icon-arrow-right-after")
@@ -50,8 +52,8 @@ class ScrapperSelenium:
             if(self.data==None): self.data = {}
             for home in info_container_array:
                 title=home.find_element_by_tag_name('a').text
-                prize=home.find_elements_by_class_name('item-price')[0].text
+                prize=home.find_elements_by_class_name('item-price')[0].text 
                 rooms=home.find_elements_by_class_name('item-detail')[0].text.replace(" hab.","")
                 meters=home.find_elements_by_class_name('item-detail')[1].text.replace(" m²","")
-                dto=IdealistaEntryDTO(title,prize,meters,rooms)
+                dto=IdealistaEntryDTO(title,prize,meters,rooms,self.driver.current_url)
                 if (title): self.data[title]=dto
