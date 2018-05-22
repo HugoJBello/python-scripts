@@ -3,11 +3,16 @@ from idealista_entry_dto import IdealistaEntryDTO
 import time
 import random
 
+#https://www.seleniumhq.org/download/
+#14393
+#https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
 class ScrapperSelenium:
 
     def __init__(self, urls):
         self.urls = urls
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Edge()
+        #self.driver = webdriver.Chrome()
         self.data ={}
     
     def get_data(self):
@@ -34,7 +39,6 @@ class ScrapperSelenium:
         time.sleep(random.uniform(5.5,6))
         if (self.is_next_page()):
             url=driver.find_elements_by_class_name("icon-arrow-right-after")[0].get_attribute("href")
-            print(url)
             driver.get(url)
             self.get_data_from_page(driver)
 

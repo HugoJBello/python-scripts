@@ -1,0 +1,35 @@
+1526973535614	geckodriver	INFO	geckodriver 0.20.1
+1526973535638	geckodriver	INFO	Listening on 127.0.0.1:50102
+1526973536115	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\HJBG\\AppData\\Local\\Temp\\rust_mozprofile.i1YpkcDaS2cf"
+1526973539407	Marionette	INFO	Listening on port 50108
+1526973540564	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526973695293	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: timeout
+1526973737401	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1526973758405	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+Unable to read VR Path Registry from C:\Users\HJBG\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\HJBG\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 13496, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 13496, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526974012681	geckodriver	INFO	geckodriver 0.20.1
+1526974012692	geckodriver	INFO	Listening on 127.0.0.1:50394
+1526974013212	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\HJBG\\AppData\\Local\\Temp\\rust_mozprofile.1hIs6CpKQnEd"
+1526974015191	Marionette	INFO	Listening on port 50399
+1526974015339	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526974936451	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: timeout
+1526974978627	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1526974999633	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+Unable to read VR Path Registry from C:\Users\HJBG\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7096, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7096, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\HJBG\AppData\Local\openvr\openvrpaths.vrpath
+[Child 13960, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13960, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\HJBG\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 11292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

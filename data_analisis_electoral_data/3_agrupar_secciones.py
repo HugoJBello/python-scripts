@@ -9,16 +9,21 @@ def agrupa_por_secciones_sumando_votos(fichero_csv_en_texto):
 	num_col_seccion= 8
 	num_col_mesas = 9
 	num_col_partidos = 10
+	num_col_distrito = 7
 	num_col_votos = 11
+	num_col_provincia = 5
+	num_col_municipio = 6
 	for fila in fichero_csv_en_texto.split("\n"):
 		cols_en_fila = fila.split(";")
 		if(len(cols_en_fila)>1):
 			mesa = cols_en_fila[num_col_mesas]
-			fila_sin_mesa = fila.replace(";" + mesa + ";", ";")
+			fila_sin_mesa = fila.replace(";" + mesa + ";", ";");
 			partido_de_fila = cols_en_fila[num_col_partidos]
+			distrito = cols_en_fila[num_col_distrito]
 			seccion = cols_en_fila[num_col_seccion]
-			if (seccion in secciones.keys()):
-				partidos_seccion = secciones[seccion]
+			cusec = cols_en_fila[num_col_provincia].rjust(2,"0") + cols_en_fila[num_col_municipio].rjust(3,"0") +  cols_en_fila[num_col_distrito].rjust(2,"0") +cols_en_fila[num_col_seccion].rjust(2,"0") 
+			if (cusec in secciones.keys()):
+				partidos_seccion = secciones[cusec]
 			else:
 				partidos_seccion = {}
 			if (partido_de_fila in partidos_seccion.keys()):
@@ -31,7 +36,7 @@ def agrupa_por_secciones_sumando_votos(fichero_csv_en_texto):
 				partidos_seccion[partido_de_fila] = fila_en_dic_actualizada
 			else:
 				partidos_seccion[partido_de_fila]=fila_sin_mesa
-			secciones[seccion] = partidos_seccion
+			secciones[cusec] = partidos_seccion
 	return secciones
 	
 def guardar_diccionario_a_fichero(diccionario_secciones, nombre_subfichero_salida, directorio):
