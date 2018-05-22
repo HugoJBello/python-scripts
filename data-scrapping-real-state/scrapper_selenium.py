@@ -52,7 +52,7 @@ class ScrapperSelenium:
             if(self.data==None): self.data = {}
             for home in info_container_array:
                 title=home.find_element_by_tag_name('a').text
-                prize=home.find_elements_by_class_name('item-price')[0].text 
+                prize=home.find_elements_by_class_name('item-price')[0].text.replace(" €","").replace("\u20ac","")
                 rooms=home.find_elements_by_class_name('item-detail')[0].text.replace(" hab.","")
                 meters=home.find_elements_by_class_name('item-detail')[1].text.replace(" m²","")
                 dto=IdealistaEntryDTO(title,prize,meters,rooms,self.driver.current_url)
