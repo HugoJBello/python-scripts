@@ -14,9 +14,4 @@ class MongoDBDataRecorder:
         scrapped_data_collection=self.db.scrapped
         for key, dto in self.dto_dictionary.items():
             dto_mongodb=dto.__dict__
-            dto_mongodb["_id"] = self.construct_id(dto)
             scrapped_data_collection.save(dto_mongodb)
-        
-
-    def construct_id(self,dto):
-        return dto.title + "---" + dto.meters+"---" + dto.rooms
