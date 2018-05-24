@@ -1,5 +1,5 @@
 from datetime import datetime
-class IdealistaEntryDTO:
+class RealStateEntryDTO:
 
     def __init__(self, title,prize,meters,rooms,url_scrapped,url_element):
         self.rooms = rooms
@@ -13,4 +13,4 @@ class IdealistaEntryDTO:
         self.construct_id()
 
     def construct_id(self):
-        self._id = self.title + "---" + self.meters+"---" + self.rooms
+        self._id = self.title + "---" + self.meters+"---" + self.rooms+"---"+self.prize

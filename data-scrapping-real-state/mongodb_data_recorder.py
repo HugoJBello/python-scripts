@@ -1,6 +1,6 @@
 import requests
 from pymongo import MongoClient
-from idealista_entry_dto import IdealistaEntryDTO
+from idealista_entry_dto import RealStateEntryDTO
 
 class MongoDBDataRecorder:
 
@@ -10,7 +10,6 @@ class MongoDBDataRecorder:
         self.db = self.client['real-state-db']
     
     def post_data(self):
-        print(self.dto_dictionary)
         scrapped_data_collection=self.db.scrapped
         for key, dto in self.dto_dictionary.items():
             dto_mongodb=dto.__dict__
