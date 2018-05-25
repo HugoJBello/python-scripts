@@ -1,6 +1,7 @@
 import requests
+import sys
 from pymongo import MongoClient
-from idealista_entry_dto import RealStateEntryDTO
+from dto.real_state_entry_dto import RealStateEntryDTO
 
 class MongoConfigGrabber:
 

@@ -1,6 +1,10 @@
 from selenium import webdriver
-from idealista_entry_dto import RealStateEntryDTO
-from summary_scrapped_dto import SummaryScrappedDTO
+import sys
+
+from utils_app.util_summary_builder import UtilsSummaryBuilder
+from dto.real_state_entry_dto import RealStateEntryDTO
+from dto.summary_scrapped_dto import SummaryScrappedDTO
+
 import time
 import random
 
@@ -30,17 +34,17 @@ class ScrapperSeleniumIdealista:
     def get_data_from_page(self,driver,url_from_db):
         print("obtaining data from " + driver.current_url)
         item_info_container = self.driver.find_elements_by_class_name("item-info-container")
-        self.parse_info_container_and_update_data(item_info_container)
+        self.parse_info_container_and_update_data(item_info_container,url_from_db)
 
         random_int =4250 + random.randint(-3, 3)
         driver.execute_script("window.scrollTo(0, "+str(random_int) +");")
         time.sleep(random.uniform(0.5,0.9))
-        self.parse_info_container_and_update_data(item_info_container)
+        self.parse_info_container_and_update_data(item_info_container,url_from_db)
 
         random_int =8573 + random.randint(-3, 3)
         driver.execute_script("window.scrollTo(0, "+str(random_int) +");")
         time.sleep(random.uniform(0.5,0.9))
-        self.parse_info_container_and_update_data(item_info_container)
+        self.parse_info_container_and_update_data(item_info_container,url_from_db)
 
         print("obtained " + str(len(self.data)) + " entries")
 
@@ -58,7 +62,7 @@ class ScrapperSeleniumIdealista:
         next_button=self.driver.find_elements_by_class_name("icon-arrow-right-after")
         return not next_button == []
 
-    def parse_info_container_and_update_data(self,info_container_array):
+    def parse_info_container_and_update_data(self,info_container_array,url_from_db):
             if(self.data==None): self.data = {}
             for home in info_container_array:
                 title=home.find_element_by_tag_name('a').text.strip()
@@ -66,7 +70,7 @@ class ScrapperSeleniumIdealista:
                 prize=home.find_elements_by_class_name('item-price')[0].text.replace(" €","").replace("\u20ac","").strip()
                 rooms=home.find_elements_by_class_name('item-detail')[0].text.replace(" hab.","").strip()
                 meters=home.find_elements_by_class_name('item-detail')[1].text.replace(" m²","").strip()
-                dto=RealStateEntryDTO(title,prize,meters,rooms,self.driver.current_url,url_element)
+                dto=RealStateEntryDTO(title,prize,meters,rooms,self.driver.current_url,url_element,url_from_db)
                 if (not dto.url_element in self.data.keys()): 
                     self.data[dto.url_element]=dto
                 else:
@@ -75,5 +79,8 @@ class ScrapperSeleniumIdealista:
 
     def get_summary(self,driver,url_from_db):
         average_prize=self.driver.find_elements_by_class_name("items-average-price")[0].text.replace("Precio medio","").replace("eur/m²","").strip()
-        self.summaries[url_from_db] = SummaryScrappedDTO(average_prize,len(self.data.keys()),url_from_db,"")
+        util_summary_builder=UtilsSummaryBuilder(self.data,url_from_db,average_prize)
+        util_summary_builder.obtain_summary()
+        summary = util_summary_builder.summary
+        self.summaries[url_from_db] = summary
         

@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.append("..")
-from scrapper_selenium_fotocasa import ScrapperSeleniumFotocasa
+from scrapper.scrapper_selenium_fotocasa import ScrapperSeleniumFotocasa
 
 
 class TestFotocasa(unittest.TestCase):  

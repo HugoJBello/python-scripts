@@ -1,6 +1,9 @@
 from selenium import webdriver
-from idealista_entry_dto import RealStateEntryDTO
-from summary_scrapped_dto import SummaryScrappedDTO
+import sys
+
+from utils_app.util_summary_builder import UtilsSummaryBuilder
+from dto.real_state_entry_dto import RealStateEntryDTO 
+from dto.summary_scrapped_dto import SummaryScrappedDTO
 import time
 import random
 
@@ -21,7 +24,7 @@ class ScrapperSeleniumFotocasa:
         for url_from_db in self.urls:
             driver = self.driver
             driver.get(url_from_db) 
-            #driver.set_window_position(-4000,0)
+            driver.set_window_position(-4000,0)
 
             self.get_data_from_page(driver,url_from_db) 
         driver.close()
@@ -30,12 +33,12 @@ class ScrapperSeleniumFotocasa:
     def get_data_from_page(self,driver,url_from_db):
         print("obtaining data from " + driver.current_url)
         search_result = self.driver.find_elements_by_class_name("sui-CardComposable-secondary")
-        self.parse_search_result_item_and_update_data(search_result)
+        self.parse_search_result_item_and_update_data(search_result,url_from_db)
 
         random_int =8573 + random.randint(-3, 3)
         driver.execute_script("window.scrollTo(0, "+str(random_int) +");")
         time.sleep(random.uniform(0.5,0.9))
-        self.parse_search_result_item_and_update_data(search_result)
+        self.parse_search_result_item_and_update_data(search_result,url_from_db)
 
         print("obtained " + str(len(self.data)) + " entries")
         time.sleep(random.uniform(0.5,1))
@@ -56,7 +59,7 @@ class ScrapperSeleniumFotocasa:
             return False
         return not controls==None
 
-    def parse_search_result_item_and_update_data(self,info_container_array):
+    def parse_search_result_item_and_update_data(self,info_container_array,url_from_db):
             if(self.data==None): self.data = {}
             for home in info_container_array:
                 title=home.find_element_by_class_name('re-Card-title').text.strip()
@@ -72,7 +75,7 @@ class ScrapperSeleniumFotocasa:
                 else:
                     meters=""
                 print(title + ".." + meters + ".." + rooms + "--" + prize)
-                dto=RealStateEntryDTO(title,prize,meters,rooms,self.driver.current_url,url_element)
+                dto=RealStateEntryDTO(title,prize,meters,rooms,self.driver.current_url,url_element,url_from_db)
                 if (not dto.url_element in self.data.keys()): 
                     self.data[dto.url_element]=dto
                 else:
@@ -80,4 +83,7 @@ class ScrapperSeleniumFotocasa:
                         self.data[dto.url_element]=dto
 
     def get_summary(self,driver,url_from_db):
-        print("_")
+        util_summary_builder=UtilsSummaryBuilder(self.data,url_from_db,"")
+        util_summary_builder.obtain_summary()
+        summary = util_summary_builder.summary
+        self.summaries[url_from_db] = summary
