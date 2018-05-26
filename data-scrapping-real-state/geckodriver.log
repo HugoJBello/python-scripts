@@ -1,0 +1,15 @@
+1527358699999	geckodriver	INFO	geckodriver 0.20.0
+1527358700036	geckodriver	INFO	Listening on 127.0.0.1:37491
+1527358701012	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ya4yWtomkWuS"
+1527358702354	Marionette	INFO	Enabled via --marionette
+1527358705782	Marionette	INFO	Listening on port 36389
+1527358705852	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 12196, Gecko_IOThread] WARNING: pipe error (105): Connection reset by peer: file /build/firefox-BgGWsI/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527358790643	geckodriver::marionette	ERROR	Failed to stop browser process
+1527358790677	geckodriver	INFO	geckodriver 0.20.0
+1527358790686	geckodriver	INFO	Listening on 127.0.0.1:44053
+1527358791689	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LvtNlSrVLpeK"
+1527358793034	Marionette	INFO	Enabled via --marionette
+1527358796842	Marionette	INFO	Listening on port 45587
+1527358796936	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527358918295	geckodriver::marionette	ERROR	Failed to stop browser process

@@ -21,7 +21,7 @@ class UtilsSummaryBuilder:
     def calculate_mean_prize_m2_and_number_items(self):
         count = 0
         sum_prize = 0
-        for dto in self.data.values():
+        for dto in self.data:
             if(self.scrapped_url in dto.url_first_page):
                 prize_m2=self.calculate_prize_m2(dto)
                 if (not prize_m2== None):

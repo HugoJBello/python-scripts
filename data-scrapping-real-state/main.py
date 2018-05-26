@@ -1,5 +1,5 @@
-from scrapper.scrapper_selenium_idealista import ScrapperSeleniumIdealista
-from scrapper.scrapper_selenium_fotocasa import ScrapperSeleniumFotocasa
+from scraper.scraper_selenium_idealista import ScraperSeleniumIdealista
+from scraper.scraper_selenium_fotocasa import ScraperSeleniumFotocasa
 
 from mongodb_dao.mongodb_data_recorder import MongoDBDataRecorder
 from mongodb_dao.mongodb_config_grabber import MongoConfigGrabber
@@ -13,15 +13,15 @@ def main():
     urls_idealista=config_grabber.scrapping_urls_idealista
     urls_fotocasa = config_grabber.scrapping_urls_fotocasa
     
-    scrapper_fotocasa = ScrapperSeleniumFotocasa(urls_fotocasa)
-    scrapper_fotocasa.get_data()
-    data_fotocasa = scrapper_fotocasa.data
-    summary_dictionary_fotocasa = scrapper_fotocasa.summaries
+    scraper_fotocasa = ScraperSeleniumFotocasa(urls_fotocasa)
+    scraper_fotocasa.get_data()
+    data_fotocasa = scraper_fotocasa.data
+    summary_dictionary_fotocasa = scraper_fotocasa.summaries
 
-    scrapper_idealista = ScrapperSeleniumIdealista(urls_idealista)
-    scrapper_idealista.get_data()
-    data_idealista = scrapper_idealista.data
-    summary_dictionary_idealista = scrapper_idealista.summaries
+    scraper_idealista = ScraperSeleniumIdealista(urls_idealista)
+    scraper_idealista.get_data()
+    data_idealista = scraper_idealista.data
+    summary_dictionary_idealista = scraper_idealista.summaries
 
     data = data_idealista.copy()
     data.update(data_fotocasa)

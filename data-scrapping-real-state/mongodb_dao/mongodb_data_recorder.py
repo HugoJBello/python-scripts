@@ -12,6 +12,7 @@ class MongoDBDataRecorder:
     
     def post_data(self):
         scrapped_data_collection=self.db.scrapped
-        for key, dto in self.dto_dictionary.items():
-            dto_mongodb=dto.__dict__
-            scrapped_data_collection.save(dto_mongodb)
+        for key, dto_list in self.dto_dictionary.items():
+            for dto in dto_list:
+                dto_mongodb=dto.__dict__
+                scrapped_data_collection.save(dto_mongodb)
