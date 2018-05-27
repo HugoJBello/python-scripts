@@ -42,7 +42,7 @@ class ScraperSeleniumIdealista:
         time.sleep(random.uniform(0.5,0.9))
         self.parse_info_container_and_update_data(item_info_container,url_from_db)
 
-        print("obtained " + str(len(self.data)) + " entries")
+        print("obtained " + str(len(self.data[url_from_db])) + " entries")
 
 
         time.sleep(random.uniform(0.5,1))

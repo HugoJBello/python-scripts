@@ -101,3 +101,11 @@ IPDL protocol error: Handler returned error code!
 
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
 1527358640449	geckodriver::marionette	ERROR	Failed to stop browser process
+1527434710233	geckodriver	INFO	geckodriver 0.20.0
+1527434710252	geckodriver	INFO	Listening on 127.0.0.1:47045
+1527434711253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.EbnVEhNGO5N3"
+1527434712666	Marionette	INFO	Enabled via --marionette
+1527434716614	Marionette	INFO	Listening on port 32979
+1527434716686	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527434754097	geckodriver::marionette	ERROR	Failed to stop browser process

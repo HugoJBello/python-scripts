@@ -1,7 +1,6 @@
 import unittest
 import sys
 sys.path.append("..")
-from scraper.scraper_selenium_fotocasa import ScraperSeleniumFotocasa
 from scraper.scraper_selenium_idealista import ScraperSeleniumIdealista
 
 
