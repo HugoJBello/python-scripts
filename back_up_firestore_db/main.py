@@ -1,6 +1,6 @@
 #pip3 install --upgrade google-cloud-firestore
 #pip3 install firebase_admin
-from entries_firebase import EntriesFirebaseDAO 
+from entries_firebase_dao import EntriesFirebaseDAO 
 
 def main():
     entries_firebase_dao = EntriesFirebaseDAO()

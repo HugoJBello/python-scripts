@@ -1,14 +1,15 @@
 from google.cloud import firestore
 import google.cloud.exceptions
 from firebase_admin import credentials
-from firebase_admin import firestore
+from firebase_admin import firestore 
+from mongodb_data_recorder import MongoDBDataRecorder
 import firebase_admin
 
 class EntriesFirebaseDAO:
 
     def __init__(self):
-        print("")
-        cred = credentials.ApplicationDefault()
+        self.collection_name="entries-pod3c"
+        cred = credentials.Certificate("podemos3cantos-firebase-adminsdk-cthls-6a90ff6ec6.json")
         firebase_admin.initialize_app(cred, {
         'projectId': 'podemos3cantos',
         'apiKey': 'AIzaSyC5Zs6etNV_7LbbnKK7rg7XtnP2f0VfaK0',
@@ -22,7 +23,9 @@ class EntriesFirebaseDAO:
         self.save_db()
     
     def save_db(self):
-        entries_ref = self.db.collection(u'entries-pod3c')
+        entries_ref = self.db.collection(self.collection_name)
+        mongoDBDataRecorder=MongoDBDataRecorder() 
         docs = entries_ref.get()
         for doc in docs:
-            print(u'{} => {}'.format(doc.id, doc.to_dict()))
+            mongoDBDataRecorder.post_data(doc.to_dict())
+        
