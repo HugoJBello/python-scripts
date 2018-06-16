@@ -1,12 +1,12 @@
 #pip3 install pyshp
 import shapefile
 
-#Read the original shapefile and create a new one adding one new field
+#Read the original shapefile and  create a new one adding one new field
 sh_reader = shapefile.Reader('SECC_CPV_E_20111101_01_R_INE')
 sh_writer = shapefile.Writer()
 shapes = sh_reader.shapes() # -> the geometries in a list
 fields = sh_reader.fields[1:]
-fields_name = [field[0] for field in fields] 
+fields_name = [field[0] for field in fields]  
 print(fields_name)
 
 records = sh_reader.records()
