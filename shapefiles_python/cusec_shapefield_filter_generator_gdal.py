@@ -10,7 +10,7 @@ class CusecShapefiledFilterGDAL:
         self.output_folder=output_folder
         self.layer_name =""
 
-        self.set_layer_and_ds()
+        #self.set_layer_and_ds()
         #self.extract_cusecs_shapefiles()
         
     def set_layer_and_ds(self):
@@ -22,13 +22,17 @@ class CusecShapefiledFilterGDAL:
 
     def extract_cusecs_shapefiles(self):
         for item in self.data_params_array:
-            cca= item[0]
-            cmun= item[1]            
-            sql ="DELETE FROM " + self.layer_name + " WHERE CMUN != '" + cmun+ "';COMMIT"
-            new_layer_name = cca + cmun + self.layer_name
-            print (new_layer_name + "\n" + sql)
-            layer = self.data_source.ExecuteSQL(sql, dialect='SQLITE')
-            layer_new = self.data_source.CopyLayer(self.layer, new_layer_name)
-            layer = layer_new =self.layer = self.data_source = None
+            try:
+                self.set_layer_and_ds()
+                cca= item[0]
+                cmun= item[1]            
+                sql ="DELETE FROM " + self.layer_name + " WHERE CMUN != '" + cmun+ "';COMMIT"
+                new_layer_name = cca + cmun + self.layer_name
+                print (new_layer_name + "\n" + sql)
+                layer = self.data_source.ExecuteSQL(sql, dialect='SQLITE')
+                layer_new = self.data_source.CopyLayer(self.layer, new_layer_name)
+                layer = layer_new =self.layer = self.data_source = None
+            except:
+                print("error")
 
 
