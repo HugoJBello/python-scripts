@@ -1,7 +1,7 @@
 #pip3 install gdal
 #sudo apt install gdal-bin python3-gdal
 #https://gis.stackexchange.com/questions/152076/where-can-i-find-gdal-python-bindings-for-python-3-4
-
+#pip3 install GDAL-2.2.4-cp37-cp37m-win_amd64.whl
 from osgeo import ogr
 class CusecShapefiledFilterGDAL:
     def __init__(self,data_shapefile,c_mun_cca_array,output_folder):
