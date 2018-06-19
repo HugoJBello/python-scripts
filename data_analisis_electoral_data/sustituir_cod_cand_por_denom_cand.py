@@ -10,35 +10,16 @@
 
 import os
 import utils
+import sys
+import pandas as pd
+pd.options.mode.chained_assignment = None
+sys._enablelegacywindowsfsencoding()
 
-# Recorre el fichero de códigos y obtiene un diccionario para transformar los cod. de candidatura
-# en denominaciones de candidatura.
-def crear_diccionario_candidaturas(fichero_codigos):
-	encabezado = utils.extraer_encabezado(fichero_codigos)
-	num_col_cod_cand = utils.encuentra_numero_columna_para(encabezado,"COD_CAND")
-	num_col_siglas_cand = utils.encuentra_numero_columna_para(encabezado,"SIGLAS_CAND")
-	
-	resultado = {}
-	for fila in fichero_codigos.split("\n"):
-			datos_fila = fila.split(";")
-			if (len(datos_fila)>1): resultado[datos_fila[num_col_cod_cand]]=datos_fila[num_col_siglas_cand]
-	return resultado
-
-# Substituye los códigos de candidatura por las denominaciones de candidatura a partir de los 
-# datos del diccionario obtenido. Asumirá que los códigos de candidatura están en la columna 10.
-def substituir_cod_cand(fichero_base,diccionario):
-	num_col_cod_cand = 10
-	resultado=[]
-	for fila in fichero_base.split("\n"):
-			datos_fila = fila.split(";")
-			if (len(datos_fila)>1): 
-				cod_cand=datos_fila[num_col_cod_cand]
-				fila_reemplazada = fila.replace(";"+cod_cand+";",";"+ diccionario[cod_cand]+";")
-				resultado = resultado + [fila_reemplazada+"\n"]
-	return resultado		
+def obtener_nombre_cand(df_nom_cand,cod_cand):
+    return df_nom_cand.loc[df_nom_cand['COD_CAND'] == cod_cand]['SIGLAS_CAND'].values.tolist()[0]
 
 #Programa principal -------------------------------------------------------------------------------------	
-def principal(directorio,prefijo_fichero,nombre_fichero_codigos):
+def principal(directorio,prefijo_fichero,nombre_fichero_codigos,nombre_fichero_con_codigos_municipios):
 	print("-----------------------------------------------")
 	print("substituyendo codigos de candidatura por siglas")
 	print("-----------------------------------------------")
@@ -47,12 +28,10 @@ def principal(directorio,prefijo_fichero,nombre_fichero_codigos):
 	#el sufijo que añadiremos al guardar los resultados en un nuevo fichero
 	sufijo = "_denom_cand.csv"
 	
-	#Extraemos el fichero de códigos
-	fichero_csv_en_texto = open(nombre_fichero_codigos,"r").read()
-	
-	#Creamos el diccionario
-	diccionario_codigos = crear_diccionario_candidaturas(fichero_csv_en_texto)
-	
+	#Creamos data frame
+	df_cod_mun = pd.read_csv(nombre_fichero_codigos,sep=";",error_bad_lines=False,encoding='latin-1')
+	df_nom_cand = pd.read_csv(nombre_fichero_con_codigos_municipios,sep=";",error_bad_lines=False,encoding='latin-1')
+
 	#Recorremos cada fichero en la subcarpeta 
 	for fichero in os.listdir(directorio):
 		nombre_subfichero = os.fsdecode(fichero)
@@ -61,22 +40,25 @@ def principal(directorio,prefijo_fichero,nombre_fichero_codigos):
 			#Descartamos que no haya sido tratado antes
 			if (not ( sufijo in nombre_subfichero)):
 				print("obteniendo nombres de candidaturas para " + nombre_subfichero)
-				subfichero_csv_en_texto = open(directorio + "/" + nombre_subfichero,"r").read()
-				
+				subfichero = directorio + "/" + nombre_subfichero
+			
+				df_cod_cand_mesas = pd.read_csv(subfichero,error_bad_lines=False, sep=";")
+
 				#hacemos la sustitución
-				resultado = substituir_cod_cand(subfichero_csv_en_texto,diccionario_codigos)
-				
-				#guardamos los resultados en un fichero con el sufijo para distinguirlo
+				for i, row in df_cod_cand_mesas.iterrows():
+					cod_cand= df_cod_cand_mesas.ix[i,"COD_CAND"]
+					nom_cand= obtener_nombre_cand(df_nom_cand,cod_cand)
+					df_cod_cand_mesas.ix[i,"COD_CAND"]=nom_cand
+				print(nombre_fichero_codigos)
 				nombre_subfichero_salida = nombre_subfichero.replace(".csv","") + sufijo
-				subfichero_salida = open(directorio + "/" + nombre_subfichero_salida,"w")
-				subfichero_salida.writelines(resultado)
-				subfichero_salida.close()
+				df_cod_cand_mesas.to_csv(directorio + "/" + nombre_subfichero_salida, index=False)
 
 if __name__ == "__main__":
 	#Directorio donde estarán los ficheros a substituir, en cuyo nombre contendrán lo que pongamos en 
 	# la variable prefijo_fichero 
-	directorio = "filtrados_municipios_substit_candidaturas"
-	
+	directorio = "tmp"
+
+	nombre_fichero_denom_cand = "recursos_input/F03_MUN_2015.csv"
 	prefijo_fichero = "F10_MUN_2015.csv"
-	nombre_fichero_con_codigos_municipios = "recursos_input/F03_1_MUN_2015.csv"
-	principal(directorio,prefijo_fichero,nombre_fichero_con_codigos_municipios)
+	nombre_fichero_con_codigos_municipios = "recursos_input/F03_MUN_2015.csv"
+	principal(directorio,prefijo_fichero,nombre_fichero_con_codigos_municipios,nombre_fichero_con_codigos_municipios)
