@@ -51,7 +51,7 @@ def principal(directorio,prefijo_fichero,nombre_fichero_codigos,nombre_fichero_c
 					df_cod_cand_mesas.ix[i,"COD_CAND"]=nom_cand
 				print(nombre_fichero_codigos)
 				nombre_subfichero_salida = nombre_subfichero.replace(".csv","") + sufijo
-				df_cod_cand_mesas.to_csv(directorio + "/" + nombre_subfichero_salida, index=False)
+				df_cod_cand_mesas.to_csv(directorio + "/" + nombre_subfichero_salida, sep=";", index=False)
 
 if __name__ == "__main__":
 	#Directorio donde estarán los ficheros a substituir, en cuyo nombre contendrán lo que pongamos en 

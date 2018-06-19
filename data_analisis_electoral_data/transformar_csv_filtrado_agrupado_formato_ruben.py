@@ -81,6 +81,6 @@ def principal(directorio,prefijo_fichero):
             subfichero_salida.close()
 
 if __name__ == "__main__":
-    directorio = "filtrados_municipios_substit_candidaturas"
+    directorio = "tmp"
     prefijo_fichero = "F10_MUN_2015_denom_cand_agrupado.csv"
     principal(directorio,prefijo_fichero)

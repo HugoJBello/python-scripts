@@ -68,14 +68,14 @@ def principal(directorio,prefijo_fichero):
 			#Descartamos que no haya sido tratado antes
 			if (not ( sufijo in nombre_subfichero)):
 				print("agrupando secciones para " + nombre_subfichero)
-				subfichero_csv_en_texto = open(directorio + "/" + nombre_subfichero,"r").read()
+				subfichero_csv_en_texto = open(directorio + "/" + nombre_subfichero,"r",encoding="utf-8").read()
 				nombre_subfichero_salida = nombre_subfichero.replace(".csv","") + sufijo
 				diccionario_quitar_rep = agrupa_por_secciones_sumando_votos(subfichero_csv_en_texto)
 				guardar_diccionario_a_fichero(diccionario_quitar_rep,nombre_subfichero_salida,directorio)
 	
 
 if __name__ == "__main__":
-	directorio = "filtrados_municipios_substit_candidaturas"
+	directorio = "tmp"
 	prefijo_fichero = "F10_MUN_2015_denom_cand.csv"
 	principal(directorio,prefijo_fichero)
 	
