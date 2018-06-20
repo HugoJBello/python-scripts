@@ -9,7 +9,7 @@ import pandas as pd
 
 from data_reader_pandas import DataReaderPandas
 from data_reader_pandas import ResultadosEnMunicipio
-
+import traceback
 
 class CusecShapefiledFilterGDAL:
     def __init__(self,data_shapefile,output_folder,lista_resultados):
@@ -45,7 +45,6 @@ class CusecShapefiledFilterGDAL:
     def extract_layer_by_nmun(self,nmun):
         sql ="SELECT * FROM " + self.layer_name + " WHERE NMUN = '" + nmun+ "';COMMIT"
         new_layer_name = nmun +"_"+ self.layer_name
-        print (new_layer_name + "\n" + sql)
         result = self.data_source.ExecuteSQL(sql, dialect='SQLITE')
         layer_new = self.data_source.CopyLayer(result, new_layer_name)
         result=None
@@ -55,7 +54,12 @@ class CusecShapefiledFilterGDAL:
     def add_new_columns_to_layer(self, layer, column_array):
         for col in column_array:
             col_short=self.cut_column(col)
-            new_field = ogr.FieldDefn(col_short, ogr.OFTInteger)
+            if "%" in col_short:
+                new_field = ogr.FieldDefn(col_short, ogr.OFTReal) 
+                new_field.SetWidth(6)
+                new_field.SetPrecision(3)           
+            else:
+                new_field = ogr.FieldDefn(col_short, ogr.OFTInteger)
             layer.CreateField(new_field)
 
     #Rellenamos las columnas nuevas con los datos de los votos
@@ -64,17 +68,15 @@ class CusecShapefiledFilterGDAL:
         while feature:
             for col in column_array:
                 cusec=feature.GetField("CUSEC")
-                print(cusec)
                 try:
-                    print(col)
                     value=df_partidos.loc[df_partidos["CUSEC"].isin([cusec])].iloc[0][col]
-                    print(value)
                     col_short=self.cut_column(col)
-                    feature.SetField(col_short, str(value))
+                    if (not "%" in col_short):
+                        feature.SetField(col_short, str(value))
+                    else:
+                        feature.SetField(col_short, value)
                     layer.SetFeature(feature)
-                    print(feature)
-                except:
-                    print("error")
+                except: traceback.print_exc()
             feature = layer.GetNextFeature()
 
 
