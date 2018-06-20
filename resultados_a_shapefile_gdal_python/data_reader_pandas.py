@@ -17,6 +17,7 @@ class DataReaderPandas:
         self.resultados=[]
         for fichero in os.listdir(self.data_folder):
             municipio=fichero.split("_")[0]
+            print(municipio)
             ruta_fichero=self.data_folder+"/"+fichero
             resultado = ResultadosEnMunicipio(municipio,fichero)
             resultado.datos_partidos = self.extraer_datos_partidos(ruta_fichero)

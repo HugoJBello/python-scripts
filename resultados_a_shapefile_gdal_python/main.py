@@ -12,6 +12,7 @@ def main():
 
     #Shapefile con las secciones censales de toda la comunidad de madrid. De aquí cortaremos cada municipio y añadiremos los resultados a las features
     shapefile="data/SECC_CPV_E_20111101_01_R_INE_MADRID.shp"
+    #shapefile="data/SECC_CPV_E_20111101_01_R_INE.shp"
 
     #Extraemos los datos de los resultados de las eleciones
     data_reader = DataReaderPandas(data_folder)

@@ -19,7 +19,7 @@ def obtener_nombre_cand(df_nom_cand,cod_cand):
     return df_nom_cand.loc[df_nom_cand['COD_CAND'] == cod_cand]['SIGLAS_CAND'].values.tolist()[0]
 
 #Programa principal -------------------------------------------------------------------------------------	
-def principal(directorio,prefijo_fichero,nombre_fichero_codigos,nombre_fichero_con_codigos_municipios):
+def principal(directorio,prefijo_fichero,nombre_fichero_con_codigos_municipios):
 	print("-----------------------------------------------")
 	print("substituyendo codigos de candidatura por siglas")
 	print("-----------------------------------------------")
@@ -29,7 +29,6 @@ def principal(directorio,prefijo_fichero,nombre_fichero_codigos,nombre_fichero_c
 	sufijo = "_denom_cand.csv"
 	
 	#Creamos data frame
-	df_cod_mun = pd.read_csv(nombre_fichero_codigos,sep=";",error_bad_lines=False,encoding='latin-1')
 	df_nom_cand = pd.read_csv(nombre_fichero_con_codigos_municipios,sep=";",error_bad_lines=False,encoding='latin-1')
 
 	#Recorremos cada fichero en la subcarpeta 
@@ -49,7 +48,6 @@ def principal(directorio,prefijo_fichero,nombre_fichero_codigos,nombre_fichero_c
 					cod_cand= df_cod_cand_mesas.ix[i,"COD_CAND"]
 					nom_cand= obtener_nombre_cand(df_nom_cand,cod_cand)
 					df_cod_cand_mesas.ix[i,"COD_CAND"]=nom_cand
-				print(nombre_fichero_codigos)
 				nombre_subfichero_salida = nombre_subfichero.replace(".csv","") + sufijo
 				df_cod_cand_mesas.to_csv(directorio + "/" + nombre_subfichero_salida, sep=";", index=False)
 
@@ -61,4 +59,4 @@ if __name__ == "__main__":
 	nombre_fichero_denom_cand = "recursos_input/F03_MUN_2015.csv"
 	prefijo_fichero = "F10_MUN_2015.csv"
 	nombre_fichero_con_codigos_municipios = "recursos_input/F03_MUN_2015.csv"
-	principal(directorio,prefijo_fichero,nombre_fichero_con_codigos_municipios,nombre_fichero_con_codigos_municipios)
+	principal(directorio,prefijo_fichero,nombre_fichero_con_codigos_municipios)
