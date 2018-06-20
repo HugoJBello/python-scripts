@@ -32,9 +32,17 @@ def principal (nombres_municipios,nombre_fichero_denom_cand, nombre_ficheros_mes
 
 				cod_municipio = df_cod_mun.loc[df_cod_mun['MUNICIPIO'] == municipio]['COD_MUN'].values.tolist()[0] 
 				
+				cod_ccaa = df_cod_mun.loc[df_cod_mun['MUNICIPIO'] == municipio]['COD_CCAA'].values.tolist()[0] 
+
+				cod_prov = df_cod_mun.loc[df_cod_mun['MUNICIPIO'] == municipio]['COD_PROV'].values.tolist()[0] 
+
 				df_fichero = pd.read_csv(ruta_fichero,sep=";",error_bad_lines=False, encoding="latin-1")
 
-				df_filtrado=df_fichero.loc[df_fichero['COD_MUN'] == cod_municipio]
+				if 'COD_CCAA' in df_fichero: 
+					df_filtrado=df_fichero.loc[(df_fichero['COD_MUN'] == cod_municipio) & (df_fichero['COD_CCAA']==cod_ccaa) & (df_fichero['COD_PROV']==cod_prov)]
+				else:
+					df_filtrado=df_fichero.loc[(df_fichero['COD_MUN'] == cod_municipio) & (df_fichero['COD_PROV']==cod_prov)]
+					
 				#guardamos el nuevo fichero con los datos de nuestro municipio
 
 				nombre_fichero_salida = nombre_carpeta_temporal+ "/" + municipio + "_" + nombre_fichero

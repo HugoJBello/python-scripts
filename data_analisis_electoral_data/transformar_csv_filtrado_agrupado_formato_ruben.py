@@ -4,12 +4,13 @@ import os
 import utils
 def obtener_conjunto_partidos(fichero_csv_en_texto, encabezado):
     resultado = set()
-    num_col_cod_cand = utils.encuentra_numero_columna_para(encabezado,"SIGLAS_CAND")
+    num_col_cod_cand = utils.encuentra_numero_columna_para(encabezado,"COD_CAND")
     filas = fichero_csv_en_texto.split("\n")
     for n in range(1,len(filas)):
         if(len(filas[n].split(";"))>1): 
             partido = filas[n].split(";")[num_col_cod_cand].strip()
             resultado.add(partido)
+    print(sorted(resultado))
     return sorted(resultado)
             
 def crear_tabla_partidos(fichero_csv_en_texto,encabezado,conjunto_partidos):
@@ -20,9 +21,8 @@ def crear_tabla_partidos(fichero_csv_en_texto,encabezado,conjunto_partidos):
     num_col_municipio = utils.encuentra_numero_columna_para(encabezado,"COD_MUN")
     num_col_distrito = utils.encuentra_numero_columna_para(encabezado,"DISTRITO")
     num_col_seccion = utils.encuentra_numero_columna_para(encabezado,"SECCION")
-    num_col_partido = utils.encuentra_numero_columna_para(encabezado,"SIGLAS_CAND")
+    num_col_partido = utils.encuentra_numero_columna_para(encabezado,"COD_CAND")
     num_col_votos = utils.encuentra_numero_columna_para(encabezado,"VOTOS_CAND")
-
     for n in range(1,len(filas)):
         fila_cortada = filas[n].split(";")
         if(len(fila_cortada)>1): 
