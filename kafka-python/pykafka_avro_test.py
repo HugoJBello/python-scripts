@@ -19,8 +19,8 @@ writer = avro.io.DatumWriter(schema)
 
 bytes_writer = io.BytesIO()
 encoder = avro.io.BinaryEncoder(bytes_writer)
-writer.write({"name": "Alyssa", "favorite_number": 256}, encoder)
-writer.write({"name": "Ben", "favorite_number": 7, "favorite_color": "red"}, encoder)
+writer.write({"name": "Alyssa2", "favorite_number": 256}, encoder)
+writer.write({"name": "Ben2", "favorite_number": 7, "favorite_color": "red2"}, encoder)
 
 raw_bytes = bytes_writer.getvalue()
 
@@ -39,9 +39,6 @@ for message in consumer:
             bytes_reader = io.BytesIO(message.value)
             decoder = avro.io.BinaryDecoder(bytes_reader)
             reader = avro.io.DatumReader(schema)
-            user1 = reader.read(decoder)
-            user2 = reader.read(decoder)
-            print(user1)
-            print(user2)
-        except:
-            print("error")
+            while(bytes_reader.tell() < len(message.value)):
+                print(reader.read(decoder))
+        except Exception as e: print(e)
