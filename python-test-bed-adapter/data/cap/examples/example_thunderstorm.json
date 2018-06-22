@@ -1,0 +1,43 @@
+{
+  "identifier": "KSTO1055887203",
+  "sender": "KSTO@NWS.NOAA.GOV",
+  "sent": "2003-06-17T14:57:00-07:00",
+  "status": "Actual",
+  "msgType": "Alert",
+  "scope": "Public",
+  "info": {
+    "category": "Met",
+    "event": "SEVERE THUNDERSTORM",
+    "responseType": "Shelter",
+    "urgency": "Immediate",
+    "severity": "Severe",
+    "certainty": "Observed",
+    "eventCode": {
+      "valueName": "SAME",
+      "value": "SVR"
+    },
+    "expires": "2003-06-17T16:00:00-07:00",
+    "senderName": "NATIONAL WEATHER SERVICE SACRAMENTO CA",
+    "headline": "SEVERE THUNDERSTORM WARNING",
+    "description": "AT 254 PM PDT...NATIONAL WEATHER SERVICE DOPPLER RADAR INDICATED A SEVERE THUNDERSTORM OVER SOUTH CENTRAL ALPINE COUNTY...OR ABOUT 18 MILES SOUTHEAST OF KIRKWOOD...MOVING SOUTHWEST AT 5 MPH. HAIL...INTENSE RAIN AND STRONG DAMAGING WINDS ARE LIKELY WITH THIS STORM.",
+    "instruction": "TAKE COVER IN A SUBSTANTIAL SHELTER UNTIL THE STORM PASSES.",
+    "contact": "BARUFFALDI/JUSKIE",
+    "area": {
+      "areaDesc": "EXTREME STORM IN THE HAGUE BEACH AREA",
+      "polygon": "52.0105704114,4.106228833 52.0105704114,4.124033585 52.1105704114,4.2894033585 52.280317327,4.4794033585 52.240317327,4.2272288334 52.140317327,4.1262288334",
+      "geocode": [{
+          "valueName": "SAME",
+          "value": "006109"
+        },
+        {
+          "valueName": "SAME",
+          "value": "006009"
+        },
+        {
+          "valueName": "SAME",
+          "value": "006003"
+        }
+      ]
+    }
+  }
+}

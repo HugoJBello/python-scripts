@@ -5,7 +5,7 @@ from utils_app.util_summary_builder import UtilsSummaryBuilder
 from dto.real_state_entry_dto import RealStateEntryDTO
 from dto.summary_scrapped_dto import SummaryScrappedDTO
 
-import time
+import time 
 import random
 
 #https://www.seleniumhq.org/download/
