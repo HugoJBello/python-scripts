@@ -13,7 +13,7 @@ import utils
 import sys
 import pandas as pd
 pd.options.mode.chained_assignment = None
-sys._enablelegacywindowsfsencoding()
+#sys._enablelegacywindowsfsencoding()
 
 def obtener_nombre_cand(df_nom_cand,cod_cand):
     return df_nom_cand.loc[df_nom_cand['COD_CAND'] == cod_cand]['SIGLAS_CAND'].values.tolist()[0]

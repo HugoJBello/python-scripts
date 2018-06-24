@@ -2,7 +2,7 @@ import os
 import sys
 import pandas as pd
 pd.options.mode.chained_assignment = None
-sys._enablelegacywindowsfsencoding()
+#sys._enablelegacywindowsfsencoding()
 
 
 def principal(directorio, prefijo_fichero):
@@ -28,12 +28,10 @@ def calcular_porcentaje(subfichero):
     for col in cols_no_partidos: 
         del df_partidos[col]
     
-    df_partidos["SUMA"] = df_partidos.sum(axis=1)
-    df_pc=df.copy()
+    suma_partidos = df_partidos["SUMA"]
     for col in list(df):
         if col not in cols_no_partidos:
             nueva_col="%"+col
-            suma_partidos = df_partidos["SUMA"]
             df[nueva_col] = (df[col]/suma_partidos)*100
             df[nueva_col]=df[nueva_col].round(decimals = 3)
     
