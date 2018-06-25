@@ -1,15 +1,20 @@
 class TestBedOptions:
-    def __init__(self, clientId, kafkaHost, schemaRegistry):
-
+    def __init__(self, **entries):
+        #, clientId, kafkaHost, schemaRegistry):
         # Unique ID of this client
-        clientId = clientId
+        self.clientId = None
 
         # Uri for the Kafka broker, e.g. broker:3501
-        kafkaHost = kafkaHost
+        self.kafkaHost = None
 
         # Uri for the schema registry, e.g. schema_registry:3502
-        schemaRegistry = schemaRegistry
-    
+        self.schemaRegistry = None
+
+        self.__dict__.update(entries)
+       
+    def validate_options(self):
+        print("")
+
     def get_options_from_file(self):
         print("")
         
