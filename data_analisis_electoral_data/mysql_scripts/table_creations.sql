@@ -1,5 +1,5 @@
 -- mysql -u root 
-
+-- 1234
 SET NAMES utf8
 DEFAULT CHARSET=utf8
 
