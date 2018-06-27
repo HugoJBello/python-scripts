@@ -3,6 +3,8 @@ import sys
 sys.path.append("..")
 from models.schema_registry import SchemaRegistry
 from models.test_bed_options import TestBedOptions
+import logging
+logging.basicConfig(level=logging.INFO)
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
@@ -19,7 +21,14 @@ class MyTestCase(unittest.TestCase):
         test_bed_configuration = TestBedOptions(options)
         schema_registry = SchemaRegistry(test_bed_configuration)
         schema_registry.start_process()
-        print(schema_registry.fetched_schemas)
+        logging.info(schema_registry.fetched_schemas)
+
+        logging.info(schema_registry.keys_schema)
+        logging.info("----------------------------------------------------------------------------\n\n")
+        logging.info(schema_registry.values_schema)
+        logging.info("----------------------------------------------------------------------------\n\n")
+        logging.info(schema_registry.schema_meta)
+
         self.assertEqual(True, True)
 
 

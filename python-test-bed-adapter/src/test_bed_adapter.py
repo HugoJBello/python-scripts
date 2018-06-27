@@ -3,7 +3,6 @@ from models.event_hook import EventHook
 from models.test_bed_options import TestBedOptions
 from pykafka import KafkaClient
 
-
 class TestBedAdapter:
     def __init__(self):
          

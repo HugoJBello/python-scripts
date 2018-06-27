@@ -1,9 +1,9 @@
 #https://stackoverflow.com/questions/1092531/event-system-in-python/1094423#1094423
 from event_hook import EventHook
 
-def ready():
-    print("ready")
-    return "ready"
+def ready(input):
+    print("ready " + input)
+    return "re"
 
 def start():
     print("start")
@@ -21,14 +21,12 @@ theBroadcaster.onReady += ready
 
 theBroadcaster.onStart += start
 
-
 # remove listener from the event
 #theBroadcaster.onChange -= function
 
 # fire event
-theBroadcaster.onReady.fire()
-theBroadcaster.onReady.fire()
-theBroadcaster.onReady.fire()
+theBroadcaster.onReady.fire("aaa")
+theBroadcaster.onReady.fire("aaasss 2222")
 
 theBroadcaster.onStart.fire()
 

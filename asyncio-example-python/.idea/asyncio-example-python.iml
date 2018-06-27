@@ -6,7 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="python-test-bed-adapter" />
     <orderEntry type="module" module-name="kafka-python" />
-    <orderEntry type="module" module-name="data-scrapping-real-state" />
+    <orderEntry type="module" module-name="event-listener-pyhon" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
