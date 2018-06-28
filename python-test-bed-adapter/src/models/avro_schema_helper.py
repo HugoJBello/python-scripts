@@ -1,7 +1,6 @@
-import io
-
 import avro.schema
-
+import avro.io
+import io
 
 class AvroSchemaHelper:
     avro_schema: object

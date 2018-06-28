@@ -5,7 +5,7 @@ class TestBedOptions:
         self.clientId = None
 
         # Uri for the Kafka broker, e.g. broker:3501
-        self.kafkaHost = None
+        self.kafka_host = None
 
         # Uri for the schema registry, e.g. schema_registry:3502
         self.schema_registry = None
@@ -14,7 +14,7 @@ class TestBedOptions:
         self.auto_register_schemas = False
 
         # If autoRegisterSchemas is true, contains the folder with *.avsc schema's to register
-        self.schema_folder = "./data/schemas"
+        self.schema_folder = "data/schemas"
 
         # If true fetch all schema versions (and not only the latest)
         self.fetch_all_versions = False

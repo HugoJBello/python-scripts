@@ -10,7 +10,8 @@ class KafkaAvroTester :
     def __init__(self,topic_name,kafka_hosts,schema_file):
         self.client = KafkaClient(hosts=kafka_hosts)
         self.topic = self.client.topics[topic_name]
-        self.schema = avro.schema.Parse(open(schema_file).read())
+        self.schema = avro.schema.Parse(b'{"namespace":"example.avro","type":"record","name":"User","fields":[{"name":"name","type":"string"},{"name":"favorite_number","type":["int","null"]},{"name":"favorite_color","type":["string","null"]}]}')
+        #self.schema = avro.schema.Parse(open(schema_file).read())
 
 
     def avro_encode_messages(self,json_messages):
@@ -54,8 +55,6 @@ if __name__=="__main__":
     kafkaAvroTester = KafkaAvroTester(topic_name,kafka_hosts,schema_file)
     json1 = {"name": "Alyssa2", "favorite_number": 256}
     json2 = {"name": "Ben2", "favorite_number": 7, "favorite_color": "red2"}
-
-    print(kafkaAvroTester.test)
 
     messages = [json1,json2]
     message_bytes = kafkaAvroTester.avro_encode_messages(messages)
