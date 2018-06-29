@@ -1,56 +1,49 @@
 from pykafka import KafkaClient
-import avro.schema
-from avro.datafile import DataFileReader, DataFileWriter
-from avro.io import DatumReader, DatumWriter
-import avro.io
 import io
-import threading
+import fastavro
+import json
 
 class KafkaAvroTester :
     def __init__(self,topic_name,kafka_hosts,schema_file):
         self.client = KafkaClient(hosts=kafka_hosts)
         self.topic = self.client.topics[topic_name]
         self.schema_str = '{"namespace": "example.avro","type": "record","name": "User","fields": [{"name": "name", "type": "string"}, {"name": "favorite_number",  "type": ["int", "null"]}, {"name": "favorite_color", "type": ["string", "null"]} ]}'
-        self.schema = avro.schema.Parse(self.schema_str)
         self.test:str
     
 
     def avro_encode_messages(self,json_messages):
-        bytes_writer = io.BytesIO()
-        writer = avro.io.DatumWriter(self.schema)
-        encoder = avro.io.BinaryEncoder(bytes_writer)
-        for message in json_messages:
-            writer.write(message, encoder)
-        raw_bytes = bytes_writer.getvalue()
-        return raw_bytes
+        encoded_messages  = io.BytesIO()
+        writer = fastavro.writer(encoded_messages, json.loads(self.schema_str),json_messages)
+        return encoded_messages.getvalue()
 
     def produce_kafka(self,bytes_message):
         with self.topic.get_sync_producer() as producer:
             producer.produce(bytes_message)
 
     def avro_decode_message(self,message):
-        bytes_reader = io.BytesIO(message)
-        decoder = avro.io.BinaryDecoder(bytes_reader)
-        reader = avro.io.DatumReader(self.schema)
-        decoded_messages =[]
-        while(bytes_reader.tell() < len(message)):
-            try:
-                decoded_messages.append(reader.read(decoder))
-            except Exception as e: print(e)
-        return decoded_messages
+        if (message):
+            message = io.BytesIO(message)
+            reader = fastavro.reader(message, reader_schema=json.loads(self.schema_str))
+            decoded_messages = []
+            for record in reader:
+                decoded_messages.append(record)
+            return decoded_messages
+
 
 
     def listener_consumer(self):
         consumer = self.topic.get_simple_consumer()
         for message in consumer:
             if message is not None:
+                print("--------------------------------")
                 print(message.offset, message.value)
                 decoded = self.avro_decode_message(message.value)
+                print("---")
                 print(decoded)
                 
                 
 if __name__=="__main__":
-    topic_name = b'topic-test'
+    topic_name = b'topic-test2'
     schema_file = "user.avsc"
     kafka_hosts = "127.0.0.1:9092,127.0.0.1:9093"
     kafkaAvroTester = KafkaAvroTester(topic_name,kafka_hosts,schema_file)

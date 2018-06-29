@@ -22,10 +22,8 @@ class AvroSchemaHelper:
     def avro_decode_message(self, message):
         bytes_reader = io.BytesIO(message)
         decoder = avro.io.BinaryDecoder(bytes_reader)
-        reader = avro.io.DatumReader(self.avro_schema)
+        reader = avro.io.DatumReader(self.avro_schema,self.avro_schema)
         decoded_messages =[]
-        while(bytes_reader.tell() < len(message)):
-            try:
-                decoded_messages.append(reader.read(decoder))
-            except Exception as e: print(e)
+        print(reader.read(decoder))
+        decoded_messages.append(reader.read(decoder))
         return decoded_messages

@@ -25,7 +25,7 @@ class ConsumerKafka():
             if message is not None:
                 logging.info(message.value)
                 #decoded_key = self.avro_helper_key.avro_decode_message(message.partition_key)
-                decoded_value = self.avro_helper_value.avro_decode_message(message.partition_key)
+                decoded_value = self.avro_helper_value.avro_decode_message(message.value)
                 logging.info("-------------------------------")
                 logging.info(decoded_value)
                 decoded_message = {"decoded_key":"","decoded_value":decoded_value}
