@@ -28,16 +28,15 @@ class KafkaAvroTester :
             producer.produce(bytes_message)
 
     def avro_decode_message(self,message):
-        if(message):
-            bytes_reader = io.BytesIO(message)
-            decoder = avro.io.BinaryDecoder(bytes_reader)
-            reader = avro.io.DatumReader(self.schema)
-            decoded_messages =[]
-            while(bytes_reader.tell() < len(message)):
-                try:
-                    decoded_messages.append(reader.read(decoder))
-                except Exception as e: print(e)
-            return decoded_messages
+        bytes_reader = io.BytesIO(message)
+        decoder = avro.io.BinaryDecoder(bytes_reader)
+        reader = avro.io.DatumReader(self.schema)
+        decoded_messages =[]
+        while(bytes_reader.tell() < len(message)):
+            try:
+                decoded_messages.append(reader.read(decoder))
+            except Exception as e: print(e)
+        return decoded_messages
 
 
     def listener_consumer(self):
@@ -50,7 +49,7 @@ class KafkaAvroTester :
                 
                 
 if __name__=="__main__":
-    topic_name = b'topic-test2'
+    topic_name = b'topic-test'
     schema_file = "user.avsc"
     kafka_hosts = "127.0.0.1:9092,127.0.0.1:9093"
     kafkaAvroTester = KafkaAvroTester(topic_name,kafka_hosts,schema_file)

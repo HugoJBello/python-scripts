@@ -23,10 +23,10 @@ class ConsumerKafka():
         consumer = self.client_topic.get_simple_consumer()
         for message in consumer:
             if message is not None:
-                logging.info(message.value)
+                logging.info(str(message.value))
                 #decoded_key = self.avro_helper_key.avro_decode_message(message.partition_key)
                 decoded_value = self.avro_helper_value.avro_decode_message(message.value)
                 logging.info("-------------------------------")
                 logging.info(decoded_value)
-                decoded_message = {"decoded_key":"","decoded_value":decoded_value}
+                decoded_message = {"decoded_key" : "", "decoded_value" : decoded_value}
                 self.on_message.fire(decoded_message)

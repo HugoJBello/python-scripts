@@ -23,11 +23,8 @@ class KafkaAvroTester :
     def avro_decode_message(self,message):
         if (message):
             message = io.BytesIO(message)
-            reader = fastavro.reader(message, reader_schema=json.loads(self.schema_str))
-            decoded_messages = []
-            for record in reader:
-                decoded_messages.append(record)
-            return decoded_messages
+            record = fastavro.schemaless_reader(message, json.loads(self.schema_str))
+            return record
 
 
 

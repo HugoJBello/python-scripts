@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/asyncio-example-python.iml" filepath="$PROJECT_DIR$/.idea/asyncio-example-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/.idea/data_analisis_electoral_data.iml" filepath="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/.idea/data_analisis_electoral_data.iml" />
       <module fileurl="file://$PROJECT_DIR$/../event-listener-pyhon/.idea/event-listener-pyhon.iml" filepath="$PROJECT_DIR$/../event-listener-pyhon/.idea/event-listener-pyhon.iml" />
       <module fileurl="file://$PROJECT_DIR$/../kafka-python/.idea/kafka-python.iml" filepath="$PROJECT_DIR$/../kafka-python/.idea/kafka-python.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python-test-bed-adapter/.idea/python-test-bed-adapter.iml" filepath="$PROJECT_DIR$/../python-test-bed-adapter/.idea/python-test-bed-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/.idea/resultados_a_shapefile_gdal_python.iml" filepath="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/.idea/resultados_a_shapefile_gdal_python.iml" />
     </modules>
   </component>
 </project>
