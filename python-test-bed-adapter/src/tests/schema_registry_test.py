@@ -3,10 +3,13 @@ import sys
 sys.path.append("..")
 from models.schema_registry import SchemaRegistry
 from models.test_bed_options import TestBedOptions
+import asyncio
+
 import logging
 logging.basicConfig(level=logging.INFO)
 
 class MyTestCase(unittest.TestCase):
+
     def test_something(self):
         options ={
           "auto_register_schemas":False,
@@ -19,18 +22,24 @@ class MyTestCase(unittest.TestCase):
           "consume": None}
 
         test_bed_configuration = TestBedOptions(options)
+        future = asyncio.Future()
         schema_registry = SchemaRegistry(test_bed_configuration)
-        schema_registry.start_process()
-        logging.info(schema_registry.fetched_schemas)
 
-        logging.info(schema_registry.keys_schema)
+        loop = asyncio.get_event_loop()
+        asyncio.ensure_future(schema_registry.start_process(future))
+
+        future.add_done_callback(self.log_results)
+
+        loop.run_until_complete(future)
+
+
+
+    def log_results(self, future):
+        logging.info(future.result()["keys"])
         logging.info("----------------------------------------------------------------------------\n\n")
-        logging.info(schema_registry.values_schema)
-        logging.info("----------------------------------------------------------------------------\n\n")
-        logging.info(schema_registry.schema_meta)
+        logging.info(future.result()["values"])
 
-        self.assertEqual(True, True)
-
+        self.assertIsNot(future.result(),None)
 
 if __name__ == '__main__':
     unittest.main()

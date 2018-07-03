@@ -13,24 +13,23 @@ class SchemaRegistry:
         self.fetch_all_versions = test_bed_options.fetch_all_versions
         self.schema_url = test_bed_options.schema_registry
 
+        #A dictionary with all the topic keys and the avro helpers. This will be necessary to decode the kafka messages
         self.keys_schema = {}
+        #A dictionary with all the topic keys and the avro helpers. This will be necessary to decode the kafka messages
         self.values_schema = {}
         self.schema_meta = {}
 
-    def start_process(self):
-        self.loop = asyncio.get_event_loop()
-        is_schema_registry_available_task = self.loop.create_task(self.is_schema_registry_available())
-        self.loop.run_until_complete(asyncio.wait([is_schema_registry_available_task]))
+    async def start_process(self, future):
+        await self.is_schema_registry_available()
 
         if self.schema_available:
-            fetch_all_schema_topics_task = self.loop.create_task(self.fetch_all_schema_topics())
-            self.loop.run_until_complete(asyncio.wait([fetch_all_schema_topics_task]))
+            await self.fetch_all_schema_topics()
 
             fetch_schema_tasks =[]
             for topic in self.topics:
-                fetch_schema_tasks.append(self.loop.create_task(self.fetch_schema(topic)))
+                await self.fetch_schema(topic)
+        future.set_result({"keys":self.keys_schema,"values":self.values_schema})
 
-            self.loop.run_until_complete(asyncio.wait(fetch_schema_tasks))
 
 
     async def is_schema_registry_available(self):
@@ -105,7 +104,7 @@ class SchemaRegistry:
         avro_helper = AvroSchemaHelper(schema_topic["response_raw"]["schema"], topic)
         schema_topic["avro_helper"] = avro_helper
 
-        item = {"avro_helper": schema_topic["avro_helper"], "sr_id": schema_topic["response_raw"]["id"]}
+        item = {"avro_helper": avro_helper, "sr_id": schema_topic["response_raw"]["id"]}
         if schema_topic["schema_type"].lower() == 'key':
             self.keys_schema[topic] = item
         else:

@@ -14,20 +14,8 @@
       <file leaf-file-name="consumer_kafka_test2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema_registry_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="42" column="77" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -35,8 +23,8 @@
       <file leaf-file-name="consumer_kafka_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="356">
+              <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -44,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_bed_adapter.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_bed_adapter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="151">
+              <caret line="45" column="133" selection-start-line="45" selection-start-column="133" selection-end-line="45" selection-end-column="133" />
               <folding>
                 <element signature="e#1#40#0" expanded="true" />
               </folding>
@@ -56,28 +44,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avro_schema_helper.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.py">
+      <file leaf-file-name="test_bed_adapter_consumer_kafka_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="355">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standard_cap-value.avsc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/data/schemas/cap/standard_cap-value.avsc">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/README.md">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="event_hook.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/event_hook.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="consumer_kafka.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+            <state relative-caret-position="102">
+              <caret line="6" column="61" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="61" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -85,25 +79,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pykafka_avro_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_test.py">
+      <file leaf-file-name="test_bed_options.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="40" column="48" selection-start-line="38" selection-start-column="11" selection-end-line="40" selection-end-column="48" />
-              <folding>
-                <element signature="e#198#229#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="217">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pykafka_avro_class_fastavro_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_fastavro_test.py">
+      <file leaf-file-name="schema_registry.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="78" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="78" />
+            <state relative-caret-position="285">
+              <caret line="103" column="11" lean-forward="true" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,6 +121,8 @@
       <find>\}</find>
       <find>bootstrap</find>
       <find>\</find>
+      <find>value</find>
+      <find>decoded</find>
     </findStrings>
     <replaceStrings>
       <replace>logging.info(</replace>
@@ -144,11 +137,7 @@
         <option value="$PROJECT_DIR$/asycio-example.py" />
         <option value="$PROJECT_DIR$/asycio-example2.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.pyi" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py" />
         <option value="$PROJECT_DIR$/../event-listener-pyhon/event_hook_test.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_from_str_test.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test_kafka-python.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/avro/io.py" />
@@ -159,10 +148,16 @@
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_fastavro_test.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test_mine.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/tes_bed_adapter_consumer_kafka_test.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py" />
       </list>
     </option>
   </component>
@@ -326,6 +321,14 @@
               <item name="site-packages" type="462c0819:PsiDirectoryNode" />
               <item name="avro" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Python37" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="unittest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -356,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in consumer_kafka_test.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_bed_adapter_consumer_kafka_test.py">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="asyncio-example-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,42 +373,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="resultados_a_shapefile_gdal_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="pykafka_avro_class_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="kafka-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../kafka-python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -455,21 +422,47 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="Unittests in schema_registry_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="python-test-bed-adapter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="python-test-bed-adapter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python tests.Unittests in consumer_kafka_test.py" />
-      <item itemvalue="Python.pykafka_avro_class_test" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.pykafka_avro_class_test_mine" />
       <item itemvalue="Python tests.Unittests in consumer_kafka_test2.py" />
+      <item itemvalue="Python tests.Unittests in schema_registry_test.py" />
+      <item itemvalue="Python tests.Unittests in test_bed_adapter_consumer_kafka_test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_bed_adapter_consumer_kafka_test.py" />
         <item itemvalue="Python tests.Unittests in consumer_kafka_test.py" />
         <item itemvalue="Python tests.Unittests in consumer_kafka_test2.py" />
+        <item itemvalue="Python tests.Unittests in schema_registry_test.py" />
         <item itemvalue="Python.pykafka_avro_class_test_mine" />
-        <item itemvalue="Python.pykafka_avro_class_test" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -487,47 +480,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.02 at 17h 25m 08s.xml">
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 17h 38m 27s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 17h 40m 16s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 17h 53m 17s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 17h 53m 36s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 17h 54m 47s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 17h 58m 17s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 18h 00m 06s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.03 at 18h 29m 43s.xml">
       <configuration name="Unittests in consumer_kafka_test2.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.02 at 17h 25m 58s.xml">
+    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 18h 30m 33s.xml">
+      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.03 at 18h 30m 33s.xml">
       <configuration name="Unittests in consumer_kafka_test2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.02 at 17h 26m 22s.xml">
-      <configuration name="Unittests in consumer_kafka_test2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.02 at 17h 26m 46s.xml">
-      <configuration name="Unittests in consumer_kafka_test2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.02 at 17h 28m 21s.xml">
-      <configuration name="Unittests in consumer_kafka_test2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test2_py - 2018.07.02 at 17h 29m 24s.xml">
-      <configuration name="Unittests in consumer_kafka_test2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test_py - 2018.07.02 at 17h 29m 51s.xml">
-      <configuration name="Unittests in consumer_kafka_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test_py - 2018.07.02 at 17h 29m 53s.xml">
-      <configuration name="Unittests in consumer_kafka_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test_py - 2018.07.02 at 17h 30m 11s.xml">
-      <configuration name="Unittests in consumer_kafka_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_consumer_kafka_test_py - 2018.07.02 at 17h 30m 12s.xml">
-      <configuration name="Unittests in consumer_kafka_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229716" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229716" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50104165" side_tool="true" weight="0.3103082" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.44989106" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.44989106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -582,34 +575,24 @@
           <line>73</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="46" />
+      <option name="time" value="55" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="31" selection-start-line="33" selection-start-column="8" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../shapefiles_python/main.py" />
     <entry file="file://$PROJECT_DIR$/../data-scrapping-real-state/main.py" />
     <entry file="file://$PROJECT_DIR$/../data-scrapping-real-state/mongodb_scripts/delete_corrupt_ids_mongodb.py" />
@@ -624,34 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
@@ -677,9 +632,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.pyi" />
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/event_hook.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../event-listener-pyhon/event_hook_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -691,23 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/cap-value.avsc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="614" selection-start-line="614" selection-end-line="614" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -832,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -849,36 +777,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/requirementes.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/data/schemas/cap/standard_cap-value.avsc">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/avro/schema.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="1228" selection-start-line="1228" selection-end-line="1228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_fastavro_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,49 +797,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py">
+    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_fastavro_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="238">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="78" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#1#40#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
+        <state relative-caret-position="119">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="662" selection-start-line="662" selection-end-line="662" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="270" selection-start-line="270" selection-end-line="270" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/event_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/cap-value.avsc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="103" column="11" lean-forward="true" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="77" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="45" column="133" selection-start-line="45" selection-start-column="133" selection-end-line="45" selection-end-column="133" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

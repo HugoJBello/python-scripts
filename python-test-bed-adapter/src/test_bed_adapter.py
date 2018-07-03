@@ -2,31 +2,58 @@
 from models.event_hook import EventHook
 from models.test_bed_options import TestBedOptions
 from models.consumer_kafka import ConsumerKafka
+from models.schema_registry import SchemaRegistry
+import asyncio
+
 import logging
 
 
 class TestBedAdapter:
-    def __init__(self):
+    def __init__(self, test_bed_options:TestBedOptions):
          
         self.is_connected = False
+        self.test_bed_options = test_bed_options
+        self.schema_registry = SchemaRegistry(test_bed_options)
 
-        self.config: TestBedOptions = None
+        self.consumers = {}
+        self.producers = {}
 
         #We set up the listeners
         self.is_ready = EventHook()
-        self.message = EventHook()
-        self.error = EventHook()
+        self.on_message = EventHook()
+        self.on_error = EventHook()
 
-    def connect(self):
+    async def initialize(self):
+        logging.info("Initializing test bed")
+        await self.schema_registry.start_process(asyncio.Future())
+        await self.init_consumers()
+        await self.init_producers()
+
+
+
+    async def connect(self):
         logging.info("")
         self.is_connected = True
         self.is_ready.fire()
 
-    def init_consumer(self):
+    async def init_consumers(self):
+        for topic_name in self.test_bed_options.consume:
+            logging.info("Initializing Kafka consumer for topic " + topic_name)
+            avro_helper_key = self.schema_registry.keys_schema[topic_name]["avro_helper"]
+            avro_helper_value = self.schema_registry.values_schema[topic_name]["avro_helper"]
+
+            #We create a new consumer for this topic. The last input is the callback where we handle the message recieved and decoded from kafka.
+            consumer = ConsumerKafka(bytes(topic_name, 'utf-8'), self.test_bed_options.kafka_host, self.test_bed_options.from_off_set,
+                                     self.test_bed_options.client_id, avro_helper_key, avro_helper_value, self.handle_message)
+            self.consumers[topic_name] = consumer
+
+    async def init_producers(self):
         logging.info("")
 
-    def handle_message(self):
-        logging.info("")
+
+    def handle_message(self, message):
+        logging.info("handling message")
+        self.on_message.fire(message)
 
     def send_message(self):
         logging.info("")

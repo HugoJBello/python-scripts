@@ -25,11 +25,14 @@ class TestBedOptions:
         # If true fetch all schema's (and not only the consume and produce topics)
         self.fetch_all_topics = False
 
+        # If set true, use the topics offset to retreive messages
+        self.from_off_set = False
+
         # Topics you want to consume
-        self.consume = None
+        self.consume = []
 
         # Topics you want to produce
-        self.produce = None
+        self.produce = []
 
         for key in dictionary:
             setattr(self, key, dictionary[key])
