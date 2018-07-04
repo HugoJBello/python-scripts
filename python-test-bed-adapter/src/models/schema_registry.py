@@ -2,16 +2,16 @@ import asyncio
 import logging
 import requests
 from models.avro_schema_helper import AvroSchemaHelper
+from models.schema_access import SchemaAccess
 
-class SchemaRegistry:
+class SchemaRegistry(SchemaAccess):
     def __init__(self, test_bed_options):
-
+        super().__init__(test_bed_options)
         self.topics = []
         self.fetched_schemas = []
         self.schema_available = False
         self.selected_topics = {"consume": test_bed_options.consume, "produce": test_bed_options.produce}
         self.fetch_all_versions = test_bed_options.fetch_all_versions
-        self.schema_url = test_bed_options.schema_registry
 
         #A dictionary with all the topic keys and the avro helpers. This will be necessary to decode the kafka messages
         self.keys_schema = {}
@@ -29,20 +29,6 @@ class SchemaRegistry:
             for topic in self.topics:
                 await self.fetch_schema(topic)
         future.set_result({"keys":self.keys_schema,"values":self.values_schema})
-
-
-
-    async def is_schema_registry_available(self):
-        url = self.schema_url
-        logging.info("schema available")
-        self.schema_available = True
-        try:
-            logging.info("checking schema in url :" + url)
-            response = requests.get(url)
-            self.schema_available = True
-        except:
-            logging.error("Error fetching url:" + url)
-            self.schema_available = False
 
     async def fetch_all_schema_topics(self):
         fetch_all_schema_topics_url = self.schema_url + "/subjects"

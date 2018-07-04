@@ -11,6 +11,8 @@
     <orderEntry type="module" module-name="event-listener-pyhon" />
     <orderEntry type="module" module-name="data_analisis_electoral_data" />
     <orderEntry type="module" module-name="resultados_a_shapefile_gdal_python" />
+    <orderEntry type="module" module-name="data-scrapping-real-state" />
+    <orderEntry type="module" module-name="djangorest_example" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

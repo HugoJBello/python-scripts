@@ -18,7 +18,7 @@ class TestBedAdapter:
         self.consumers = {}
         self.producers = {}
 
-        #We set up the listeners
+        #We set up the handlers for the events
         self.is_ready = EventHook()
         self.on_message = EventHook()
         self.on_error = EventHook()
@@ -52,7 +52,7 @@ class TestBedAdapter:
 
 
     def handle_message(self, message):
-        logging.info("handling message")
+        #We emit the message
         self.on_message.fire(message)
 
     def send_message(self):

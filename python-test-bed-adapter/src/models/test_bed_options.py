@@ -8,7 +8,7 @@ class TestBedOptions:
         self.kafka_host = None
 
         # Uri for the schema registry, e.g. schema_registry:3502
-        self.schema_registry = None
+        self.schema_registry = "localhost:3502"
 
         #
         self.auto_register_schemas = False
