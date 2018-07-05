@@ -10,7 +10,7 @@ class TestBedOptions:
         # Uri for the schema registry, e.g. schema_registry:3502
         self.schema_registry = "localhost:3502"
 
-        #
+        # If true, automatically register schema's on startup
         self.auto_register_schemas = False
 
         # If autoRegisterSchemas is true, contains the folder with *.avsc schema's to register
@@ -28,12 +28,16 @@ class TestBedOptions:
         # If set true, use the topics offset to retreive messages
         self.from_off_set = False
 
+        # How often should the adapter try to reconnect to the kafka server if the first time fails
+        self.reconnection_retries = 5
+
         # Topics you want to consume
         self.consume = []
 
         # Topics you want to produce
         self.produce = []
 
+        # Here we override the default values if they were introduced in the dictionary as an input of the constructor
         for key in dictionary:
             setattr(self, key, dictionary[key])
 

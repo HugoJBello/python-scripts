@@ -15,7 +15,7 @@ class SchemaRegistry(SchemaAccess):
 
         #A dictionary with all the topic keys and the avro helpers. This will be necessary to decode the kafka messages
         self.keys_schema = {}
-        #A dictionary with all the topic keys and the avro helpers. This will be necessary to decode the kafka messages
+        #A dictionary with all the topic values and the avro helpers. This will be necessary to decode the kafka messages
         self.values_schema = {}
         self.schema_meta = {}
 

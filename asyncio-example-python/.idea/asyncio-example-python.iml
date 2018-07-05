@@ -13,6 +13,8 @@
     <orderEntry type="module" module-name="resultados_a_shapefile_gdal_python" />
     <orderEntry type="module" module-name="data-scrapping-real-state" />
     <orderEntry type="module" module-name="djangorest_example" />
+    <orderEntry type="module" module-name="examples-map-filter-reduce" />
+    <orderEntry type="module" module-name="transformar_DAT_en_CSV_ine_elecciones" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

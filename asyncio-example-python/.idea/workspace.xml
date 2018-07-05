@@ -13,47 +13,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="schema_publisher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_publisher.py">
+      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_bed_adapter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#1#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema_registry.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py">
+      <file leaf-file-name="10041105.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011/10041105.csv">
+          <provider selected="true" editor-type-id="LargeFileEditor" />
+        </entry>
+      </file>
+      <file leaf-file-name="proceso_completo_pandas_mun_2015.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2015.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="-359">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proceso_completo_pandas_gen_2016.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_gen_2016.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proceso_completo_pandas_mun_2011.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2011.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema_access.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_access.py">
+      <file leaf-file-name="data_reader_pandas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/data_reader_pandas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state>
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema_registry_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py">
+      <file leaf-file-name="proceso_completo_con_indicadores_pandas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_con_indicadores_pandas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="36" column="48" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cusec_shapefield_filter_generator_gdal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -102,22 +151,17 @@
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_from_str_test.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test_kafka-python.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/avro/io.py" />
-        <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py" />
-        <option value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_con_indicadores_pandas.py" />
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/data_reader_pandas.py" />
-        <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_fastavro_test.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test_mine.py" />
         <option value="$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/tes_bed_adapter_consumer_kafka_test.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/consumer_kafka.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py" />
         <option value="$PROJECT_DIR$/../../python-datascraping-fotocasa-idealista/requirements.txt" />
         <option value="$PROJECT_DIR$/../../python-django-examples/djangorest_example/djangorest_example/settings.py" />
         <option value="$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/tests.py" />
@@ -127,9 +171,23 @@
         <option value="$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/urls.py" />
         <option value="$PROJECT_DIR$/../../python-django-examples/djangorest_example/djangorest_example/urls.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_access.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_publisher.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_access.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/examples_map_filter_reduce.py" />
+        <option value="$PROJECT_DIR$/../examples-map-filter-reduce/examples_map_filter_reduce.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2015.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_con_indicadores_pandas.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2011.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_gen_2016.py" />
+        <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py" />
       </list>
     </option>
   </component>
@@ -152,6 +210,25 @@
           <expand>
             <path>
               <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_analisis_electoral_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_analisis_electoral_data" type="462c0819:PsiDirectoryNode" />
+              <item name="recursos_input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_analisis_electoral_data" type="462c0819:PsiDirectoryNode" />
+              <item name="recursos_input" type="462c0819:PsiDirectoryNode" />
+              <item name="mun_2015" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resultados_a_shapefile_gdal_python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-test-bed-adapter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -163,13 +240,7 @@
               <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-test-bed-adapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-test-bed-adapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,16 +250,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python-django-examples/djangorest_example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\hugo_documentos\otros\github\python-scripts\examples-map-filter-reduce" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\hugo_documentos\otros\github\python-data-projects-examples\data_analisis_electoral_data" />
+      <recent name="C:\hugo_documentos\otros\github\python-data-projects-examples\data_analisis_electoral_data\recursos_input\mun_2011" />
+      <recent name="C:\hugo_documentos\otros\github\python-data-projects-examples\transformar_DAT_en_CSV_ine_elecciones" />
       <recent name="C:\hugo_documentos\otros\github\python-scripts\python-test-bed-adapter\src\models" />
       <recent name="C:\hugo_documentos\otros\github\python-scripts\python-test-bed-adapter\src\tests" />
-      <recent name="C:\hugo_documentos\otros\github\python-scripts\kafka-python" />
-      <recent name="C:\hugo_documentos\otros\github\python-scripts\asyncio-example-python" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in schema_registry_test.py">
+  <component name="RunManager" selected="Python.proceso_completo_pandas_mun_2015">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="asyncio-example-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -222,91 +297,111 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="data-scrapping-real-state" />
+    <configuration name="cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="transformar_DAT_en_CSV_ine_elecciones" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-datascraping-fotocasa-idealista" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-datascraping-fotocasa-idealista/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests in consumer_kafka_test2.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="python-test-bed-adapter" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="resultados_a_shapefile_gdal_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests in consumer_kafka_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="python-test-bed-adapter" />
+    <configuration name="proceso_completo_pandas_gen_2016" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_analisis_electoral_data" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_gen_2016.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests in schema_registry_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="python-test-bed-adapter" />
+    <configuration name="proceso_completo_pandas_mun_2011" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_analisis_electoral_data" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2011.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="python-test-bed-adapter" />
+    <configuration name="proceso_completo_pandas_mun_2015" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_analisis_electoral_data" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-test-bed-adapter/src/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../python-test-bed-adapter/src/tests/test_bed_adapter_consumer_kafka_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2015.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python tests.Unittests in consumer_kafka_test.py" />
-      <item itemvalue="Python tests.Unittests in consumer_kafka_test2.py" />
-      <item itemvalue="Python tests.Unittests in schema_registry_test.py" />
-      <item itemvalue="Python tests.Unittests in test_bed_adapter_consumer_kafka_test.py" />
+      <item itemvalue="Python.cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10" />
+      <item itemvalue="Python.proceso_completo_pandas_mun_2011" />
+      <item itemvalue="Python.proceso_completo_pandas_mun_2015" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.proceso_completo_pandas_gen_2016" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in schema_registry_test.py" />
+        <item itemvalue="Python.proceso_completo_pandas_mun_2015" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Unittests in test_bed_adapter_consumer_kafka_test.py" />
-        <item itemvalue="Python tests.Unittests in consumer_kafka_test.py" />
-        <item itemvalue="Python tests.Unittests in consumer_kafka_test2.py" />
+        <item itemvalue="Python.proceso_completo_pandas_gen_2016" />
+        <item itemvalue="Python.proceso_completo_pandas_mun_2011" />
+        <item itemvalue="Python.cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10" />
       </list>
     </recent_temporary>
   </component>
@@ -324,12 +419,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_bed_adapter_consumer_kafka_test_py - 2018.07.03 at 18h 32m 57s.xml">
-      <configuration name="Unittests in test_bed_adapter_consumer_kafka_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_schema_registry_test_py - 2018.07.04 at 17h 52m 34s.xml">
-      <configuration name="Unittests in schema_registry_test.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_schema_registry_test_py - 2018.07.04 at 18h 12m 36s.xml">
       <configuration name="Unittests in schema_registry_test.py" configurationId="tests" />
     </history-entry>
@@ -354,19 +443,24 @@
     <history-entry file="Unittests_in_schema_registry_test_py - 2018.07.04 at 18h 35m 44s.xml">
       <configuration name="Unittests in schema_registry_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_schema_registry_test_py - 2018.07.05 at 10h 45m 30s.xml">
+      <configuration name="Unittests in schema_registry_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_schema_registry_test_py - 2018.07.05 at 10h 46m 49s.xml">
+      <configuration name="Unittests in schema_registry_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12908325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23182297" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50104165" side_tool="true" weight="0.3103082" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.2962963" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.24618736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.21568628" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -378,6 +472,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -438,197 +535,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/kafka/client_async.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="818" column="35" selection-start-line="818" selection-start-column="35" selection-end-line="818" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pykafka/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="319" lean-forward="true" selection-start-line="319" selection-end-line="319" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/kafka/producer/kafka.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test_kafka-python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/users.avro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/user.avsc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/avro/io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="691" column="9" selection-start-line="691" selection-start-column="9" selection-end-line="691" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="2008" selection-start-line="2008" selection-end-line="2008" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_con_indicadores_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="93" column="89" selection-start-line="93" selection-start-column="89" selection-end-line="93" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/data_reader_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test_mine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/avro/datafile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="164" column="16" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="31" selection-start-line="33" selection-start-column="8" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/data/schemas/cap/standard_cap-value.avsc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/avro/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="1228" selection-start-line="1228" selection-end-line="1228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" column="48" selection-start-line="38" selection-start-column="11" selection-end-line="40" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../kafka-python/pykafka_avro_class_fastavro_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/avro_schema_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="662" selection-start-line="662" selection-end-line="662" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/event_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/cap-value.avsc" />
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/consumer_kafka_test2.py">
@@ -678,23 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="e#1#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/djangorest_example/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -725,26 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/djangorest_example/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -768,10 +638,79 @@
     <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-django-examples/djangorest_example/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/urllib3/util/retry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/test_bed_options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_access.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../examples-map-filter-reduce/examples_map_filter_reduce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_registry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        <state relative-caret-position="187">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -780,28 +719,154 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_publisher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/tests/schema_registry_test.py">
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        <state relative-caret-position="52">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_access.py">
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="120">
+          <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/recursos_input/F03_MUN_2015.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/recursos_input/mun_2015/F06_1_MUN_2015.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011/05041105.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011/09041105.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016/06021606.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016/05021606.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2193" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016/03021606.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016/03021606.DAT">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016/05021606.DAT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4437" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016/10021606.DAT">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011/10041105.DAT">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011/10041105.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/recursos_input/mun_2011/F03_MUN_2011.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/data_reader_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_con_indicadores_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_gen_2016.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2011.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2015.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-359">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>

@@ -4,9 +4,9 @@ sys.path.append("..")
 from models.schema_registry import SchemaRegistry
 from models.test_bed_options import TestBedOptions
 import asyncio
-
 import logging
 logging.basicConfig(level=logging.INFO)
+
 
 class MyTestCase(unittest.TestCase):
 
@@ -39,7 +39,7 @@ class MyTestCase(unittest.TestCase):
         logging.info("----------------------------------------------------------------------------\n\n")
         logging.info(future.result()["values"])
 
-        self.assertIsNot(future.result(),None)
+        self.assertIsNot(future.result(), None)
 
 if __name__ == '__main__':
     unittest.main()
