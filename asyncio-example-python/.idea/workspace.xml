@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="727c91d0-77ad-4879-8e4c-a97abcafafb3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../python-datascraping-fotocasa-idealista/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="727c91d0-77ad-4879-8e4c-a97abcafafb3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,96 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_bed_adapter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/test_bed_adapter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#1#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10041105.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011/10041105.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor" />
-        </entry>
-      </file>
-      <file leaf-file-name="proceso_completo_pandas_mun_2015.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2015.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="proceso_completo_pandas_gen_2016.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_gen_2016.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="proceso_completo_pandas_mun_2011.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2011.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_reader_pandas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/data_reader_pandas.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="proceso_completo_con_indicadores_pandas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_con_indicadores_pandas.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cusec_shapefield_filter_generator_gdal.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -178,7 +91,6 @@
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/models/schema_publisher.py" />
         <option value="$PROJECT_DIR$/../python-test-bed-adapter/examples_map_filter_reduce.py" />
         <option value="$PROJECT_DIR$/../examples-map-filter-reduce/examples_map_filter_reduce.py" />
-        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py" />
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/mun_2011_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/transformar_DAT_en_CSV_ine_elecciones/cong_2016_obtener_csv_a_partir_de_DAT_ine_F3_F05_F6_F09_F10.py" />
@@ -188,6 +100,7 @@
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/cusec_shapefield_filter_generator_gdal.py" />
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_gen_2016.py" />
         <option value="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/main.py" />
+        <option value="$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py" />
       </list>
     </option>
   </component>
@@ -211,21 +124,6 @@
             <path>
               <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
               <item name="data_analisis_electoral_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_analisis_electoral_data" type="462c0819:PsiDirectoryNode" />
-              <item name="recursos_input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_analisis_electoral_data" type="462c0819:PsiDirectoryNode" />
-              <item name="recursos_input" type="462c0819:PsiDirectoryNode" />
-              <item name="mun_2015" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resultados_a_shapefile_gdal_python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="asyncio-example-python" type="b2602c69:ProjectViewProjectNode" />
@@ -452,6 +350,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23182297" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -809,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/data_reader_pandas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -865,8 +757,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/proceso_completo_pandas_mun_2015.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
+        <state relative-caret-position="-373">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-test-bed-adapter/src/utils/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
