@@ -4,6 +4,7 @@ import requests
 from models.avro_schema_helper import AvroSchemaHelper
 from models.schema_access import SchemaAccess
 
+
 class SchemaRegistry(SchemaAccess):
     def __init__(self, test_bed_options):
         super().__init__(test_bed_options)

@@ -14,7 +14,7 @@ class TestBedOptions:
         self.auto_register_schemas = False
 
         # If autoRegisterSchemas is true, contains the folder with *.avsc schema's to register
-        self.schema_folder = "data/schemas"
+        self.schema_folder = "data\\schemas\\"
 
         # If true fetch all schema versions (and not only the latest)
         self.fetch_all_versions = False

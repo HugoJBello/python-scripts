@@ -1,5 +1,6 @@
 
 from functools import reduce
+import os
 
 array = [1,2,3,4,5,6,7,8,9,10]
 print ("numbers ",array)
@@ -17,3 +18,11 @@ print("max ", max)
 
 min = reduce((lambda x,y: x if (y>x) else y),array)
 print("min", min)
+
+print(os.path.abspath(__file__))
+path =  os.path.abspath(__file__)
+path_up = os.path.dirname(path)
+path_up_up = os.path.dirname(path_up)
+
+print(path_up)
+print(path_up_up)

@@ -12,7 +12,8 @@ class AvroSchemaHelper:
     def __init__(self, schema_str, topic):
         self._schema_str = schema_str
         self.topic = topic
-        self.avro_schema = avro.schema.SchemaFromJSONData(json.loads(self._schema_str))
+        json_schema = json.loads(self._schema_str)
+        self.avro_schema = avro.schema.SchemaFromJSONData(json_schema)
 
     def avro_encode_messages(self, json_messages):
         bytes_writer = io.BytesIO()
