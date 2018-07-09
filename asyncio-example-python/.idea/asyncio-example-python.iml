@@ -8,13 +8,12 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="python-test-bed-adapter" />
     <orderEntry type="module" module-name="kafka-python" />
-    <orderEntry type="module" module-name="event-listener-pyhon" />
     <orderEntry type="module" module-name="data_analisis_electoral_data" />
     <orderEntry type="module" module-name="resultados_a_shapefile_gdal_python" />
     <orderEntry type="module" module-name="data-scrapping-real-state" />
     <orderEntry type="module" module-name="djangorest_example" />
-    <orderEntry type="module" module-name="examples-map-filter-reduce" />
     <orderEntry type="module" module-name="transformar_DAT_en_CSV_ine_elecciones" />
+    <orderEntry type="module" module-name="analisi_demografico_seccion_censal" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
