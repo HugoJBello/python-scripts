@@ -23,11 +23,11 @@ class TestBedAdapter:
         self.on_message = EventHook()
         self.on_error = EventHook()
 
-    async def initialize(self):
+    def initialize(self):
         logging.info("Initializing test bed")
-        await self.schema_registry.start_process(asyncio.Future())
-        await self.init_consumers()
-        await self.init_producers()
+        self.schema_registry.start_process()
+        self.init_consumers()
+        self.init_producers()
 
 
 
@@ -36,7 +36,7 @@ class TestBedAdapter:
         self.is_connected = True
         self.is_ready.fire()
 
-    async def init_consumers(self):
+    def init_consumers(self):
         for topic_name in self.test_bed_options.consume:
             logging.info("Initializing Kafka consumer for topic " + topic_name)
             avro_helper_key = self.schema_registry.keys_schema[topic_name]["avro_helper"]
@@ -47,7 +47,7 @@ class TestBedAdapter:
                                      self.test_bed_options.client_id, avro_helper_key, avro_helper_value, self.handle_message)
             self.consumers[topic_name] = consumer
 
-    async def init_producers(self):
+    def init_producers(self):
         logging.info("")
 
 

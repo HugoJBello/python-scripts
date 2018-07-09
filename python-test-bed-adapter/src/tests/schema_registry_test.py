@@ -8,9 +8,9 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 
-class MyTestCase(unittest.TestCase):
+class SchemaRegistryTest(unittest.TestCase):
 
-    def test_something(self):
+    def test_schema_registry(self):
         options ={
           "auto_register_schemas":False,
           #"kafka_host": 'http://driver-testbed.eu:3501',
@@ -22,15 +22,17 @@ class MyTestCase(unittest.TestCase):
           "consume": None}
 
         test_bed_configuration = TestBedOptions(options)
-        future = asyncio.Future()
+
         schema_registry = SchemaRegistry(test_bed_configuration)
+        schema_registry.start_process()
 
-        loop = asyncio.get_event_loop()
-        asyncio.ensure_future(schema_registry.start_process(future))
 
-        future.add_done_callback(self.log_results)
+        logging.info("----------------------------------------------------------------------------\n\n")
+        logging.info(schema_registry.keys_schema)
+        logging.info(schema_registry.values_schema)
+        self.assertGreater(len(schema_registry.keys_schema), 0)
+        self.assertGreater(len(schema_registry.values_schema), 0)
 
-        loop.run_until_complete(future)
 
 
 

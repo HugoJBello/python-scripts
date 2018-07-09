@@ -1,5 +1,4 @@
 import unittest
-import unittest
 import sys
 sys.path.append("..")
 import os
@@ -11,6 +10,8 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 class MyTestCase(unittest.TestCase):
+
+    @unittest.skip("This test can use an outdated version of your schema")
     def test_something(self):
         options ={
           "auto_register_schemas": False,

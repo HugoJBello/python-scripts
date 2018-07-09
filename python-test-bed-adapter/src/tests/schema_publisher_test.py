@@ -5,9 +5,9 @@ from models.schema_publisher import SchemaPublisher
 import logging
 logging.basicConfig(level=logging.INFO)
 
-class MyTestCase(unittest.TestCase):
+class SchemaPublisherTest(unittest.TestCase):
 
-    def test_something(self):
+    def test_schema_registry(self):
         options ={
           "auto_register_schemas":False,
           #"kafka_host": 'http://driver-testbed.eu:3501',
@@ -19,24 +19,17 @@ class MyTestCase(unittest.TestCase):
           "consume": None}
 
         test_bed_configuration = TestBedOptions(options)
-        future = asyncio.Future()
         schema_publisher = SchemaPublisher(test_bed_configuration)
 
-        loop = asyncio.get_event_loop()
-        asyncio.ensure_future(schema_publisher.start_process(future))
+        error_obtained = False
+        try:
+            schema_publisher.start_process()
+        except:
+            error_obtained=True
 
-        future.add_done_callback(self.log_results)
-
-        loop.run_until_complete(future)
+        self.assertIs(error_obtained, False)
 
 
-
-    def log_results(self, future):
-        logging.info(future.result()["keys"])
-        logging.info("----------------------------------------------------------------------------\n\n")
-        logging.info(future.result()["values"])
-
-        self.assertIsNot(future.result(), None)
 
 if __name__ == '__main__':
     unittest.main()

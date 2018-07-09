@@ -15,8 +15,8 @@ class SchemaPublisher(SchemaAccess):
         file_path = os.path.dirname(os.path.abspath(__file__))
         self.default_schema_path = os.path.join(file_path,self.default_schema)
 
-    async def start_process(self, future):
-        await self.is_schema_registry_available()
+    def start_process(self):
+        self.is_schema_registry_available()
 
         if self.schema_available:
             files = Helpers.find_files_in_dir(self.schema_folder)
@@ -29,14 +29,22 @@ class SchemaPublisher(SchemaAccess):
     def post_schema(self, schema_filename:str, use_default_schema:bool):
         schema_topic = os.path.basename(schema_filename).replace(".avsc","")
         upload_url = self.schema_url + "/subjects/"+schema_topic+"/versions"
-        default_schema = json.loads(open(self.default_schema_path,encoding="utf-8").read())
-        schema = default_schema if use_default_schema else json.loads(open(schema_filename,encoding="utf-8").read())
+        default_schema_file = open(self.default_schema_path,encoding="utf-8")
+        default_schema = json.loads(default_schema_file.read())
+        default_schema_file.close()
+        if use_default_schema:
+            schema = default_schema
+        else:
+            schema_file =  open(schema_filename, encoding="utf-8")
+            schema = json.loads(schema_file.read())
+            schema_file.close()
 
         data = {"schema":schema}
         headers = {"Content-type": "application/vnd.schemaregistry.v1+json"}
         try:
             requests.post(url=upload_url, data=data, headers=headers)
-            logging.info("Uploaded schema " + schema_topic + " to " + upload_url)
+            message = "Uploaded schema " + schema_topic + " to " + upload_url + " with default key schema " if use_default_schema else "Uploaded schema " + schema_topic + " to " + upload_url
+            logging.info(message)
         except:
             logging.error("Error uploading schema " + schema_topic + " to " + upload_url)
 

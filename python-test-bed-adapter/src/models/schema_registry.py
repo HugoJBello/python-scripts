@@ -20,18 +20,17 @@ class SchemaRegistry(SchemaAccess):
         self.values_schema = {}
         self.schema_meta = {}
 
-    async def start_process(self, future):
-        await self.is_schema_registry_available()
+    def start_process(self):
+        self.is_schema_registry_available()
 
         if self.schema_available:
-            await self.fetch_all_schema_topics()
+            self.fetch_all_schema_topics()
 
             fetch_schema_tasks =[]
             for topic in self.topics:
-                await self.fetch_schema(topic)
-        future.set_result({"keys":self.keys_schema,"values":self.values_schema})
+                self.fetch_schema(topic)
 
-    async def fetch_all_schema_topics(self):
+    def fetch_all_schema_topics(self):
         fetch_all_schema_topics_url = self.schema_url + "/subjects"
         try:
             logging.info("Fetching all schemas using url:" + fetch_all_schema_topics_url)
@@ -42,7 +41,7 @@ class SchemaRegistry(SchemaAccess):
 
 
 
-    async def fetch_all_schema_versions(self, topic):
+    def fetch_all_schema_versions(self, topic):
         fetch_all_versions_url = self.schema_url + '/subjects/' + topic + '/versions'
         try:
             logging.info("Fetching all schema versions using url:" + fetch_all_versions_url)
@@ -53,8 +52,8 @@ class SchemaRegistry(SchemaAccess):
             return None
 
 
-    async def fetch_schema(self, topic):
-        schema_topic_latest = await self.fetch_lastest_version(topic)
+    def fetch_schema(self, topic):
+        schema_topic_latest = self.fetch_lastest_version(topic)
         topic = schema_topic_latest["topic"]
         version = schema_topic_latest["version"]
         parts = topic.split('-')
@@ -75,7 +74,7 @@ class SchemaRegistry(SchemaAccess):
         except:
             logging.error("Error fetching latest schema using url:" + fetch_schema_url)
 
-    async def fetch_lastest_version(self, topic):
+    def fetch_lastest_version(self, topic):
         fetch_latest_versions_url = self.schema_url + '/subjects/' + topic + '/versions/latest'
         try:
             logging.info("Fetching latest schema versions using url:" + fetch_latest_versions_url)

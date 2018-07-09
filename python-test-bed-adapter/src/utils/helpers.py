@@ -1,6 +1,18 @@
 
 import os
 from functools import reduce
+import collections
+import os
+import pathlib
+
+
+def scantree_recursive(path):
+    """Recursively yield DirEntry objects for given directory."""
+    for entry in os.scandir(path):
+        if entry.is_dir(follow_symlinks=False):
+            yield from scantree_recursive(entry.path)  # see below for Python 2.x
+        else:
+            yield entry
 
 class Helpers:
     def __init__(self):
@@ -15,16 +27,19 @@ class Helpers:
             return []
 
         files_schema = []
-        for root, dirs, files in os.walk(directory_path):
-            for file in files:
-                if ".avsc" in file:
-                    files_schema.append(file)
+
+        for entry in scantree_recursive(directory_path):
+            if entry.is_file():
+                files_schema.append(entry.path)
         return files_schema
+
+
 
     def missing_key_files(files:list):
         value_schema_files = list(filter (lambda filename:"-value.avsc" in filename, files))
         result = []
         for value_schema in value_schema_files:
-            if not (value_schema.replace("-value.avsc","-key.avsc") in files):
-                result.append(value_schema)
+            key_schema = value_schema.replace("-value.avsc","-key.avsc")
+            if not (key_schema in files):
+                result.append(key_schema)
         return result

@@ -25,7 +25,7 @@ class SchemaAccess:
         session.mount('https://', adapter)
         return session
 
-    async def is_schema_registry_available(self):
+    def is_schema_registry_available(self):
         url = self.schema_url
         logging.info("schema available")
         self.schema_available = True
