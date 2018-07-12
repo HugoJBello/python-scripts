@@ -1,13 +1,12 @@
 import unittest
-import unittest
 import sys
-sys.path.append("..")
-
-from models.test_bed_options import TestBedOptions
+from test_bed_options import TestBedOptions
 from test_bed_adapter import TestBedAdapter
 import threading
 import time
 import logging
+import json
+sys.path.append("..")
 logging.basicConfig(level=logging.INFO)
 
 class MyTestCase(unittest.TestCase):
@@ -16,15 +15,9 @@ class MyTestCase(unittest.TestCase):
     def test_consumer_from_adapter(self):
         self.was_any_message_obtained = False
 
-        options ={
-          "auto_register_schemas":False,
-          #"kafka_host": 'driver-testbed.eu:3501',
-          #"schema_registry": 'http://driver-testbed.eu:3502',
-          "kafka_host": '127.0.0.1:3501',
-          "schema_registry": 'http://localhost:3502',
-          "fetch_all_versions": False,
-          "client_id": 'GMV-Consumer',
-          "consume": ["standard_cap","simulation-entity-item"]}
+        options_file = open("test_bed_options_for_tests.json", encoding="utf8")
+        options = json.loads(options_file.read())
+        options_file.close()
 
         test_bed_options = TestBedOptions(options)
         test_bed_adapter = TestBedAdapter(test_bed_options)

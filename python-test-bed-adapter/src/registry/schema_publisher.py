@@ -3,7 +3,7 @@ import logging
 import requests
 import json
 import os
-from models.schema_access import SchemaAccess
+from registry.schema_access import SchemaAccess
 from utils.helpers import Helpers
 
 

@@ -1,8 +1,7 @@
-import asyncio
 import logging
 import requests
-from models.avro_schema_helper import AvroSchemaHelper
-from models.schema_access import SchemaAccess
+from avro_schema_helper import AvroSchemaHelper
+from registry.schema_access import SchemaAccess
 
 
 class SchemaRegistry(SchemaAccess):

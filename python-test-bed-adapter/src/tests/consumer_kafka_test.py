@@ -1,11 +1,10 @@
 import unittest
-import unittest
 import sys
 sys.path.append("..")
 
-from models.test_bed_options import TestBedOptions
-from models.consumer_kafka import ConsumerKafka
-from models.avro_schema_helper import AvroSchemaHelper
+from test_bed_options import TestBedOptions
+from kafka_manager import KafkaManager
+from avro_schema_helper import AvroSchemaHelper
 
 import logging
 logging.basicConfig(level=logging.INFO)
@@ -40,9 +39,9 @@ class MyTestCase(unittest.TestCase):
 
         on_message_handler = lambda x: logging.info(x)
 
-        consumer_kafka = ConsumerKafka(topic, test_bed_options.kafka_host, test_bed_options.from_off_set, client_id,
-                                       avro_helper_key,
-                                       avro_helper_value, on_message_handler)
+        consumer_kafka = KafkaManager(topic, test_bed_options.kafka_host, test_bed_options.from_off_set, client_id,
+                                      avro_helper_key,
+                                      avro_helper_value, on_message_handler)
 
         consumer_kafka.listen_messages()
 

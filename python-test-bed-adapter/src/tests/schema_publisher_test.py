@@ -1,22 +1,16 @@
 import unittest
-import asyncio
-from models.test_bed_options import TestBedOptions
-from models.schema_publisher import SchemaPublisher
+import json
+from test_bed_options import TestBedOptions
+from registry.schema_publisher import SchemaPublisher
 import logging
 logging.basicConfig(level=logging.INFO)
 
 class SchemaPublisherTest(unittest.TestCase):
 
     def test_schema_registry(self):
-        options ={
-          "auto_register_schemas":False,
-          #"kafka_host": 'http://driver-testbed.eu:3501',
-          #"schema_registry": 'http://driver-testbed.eu:3502',
-          "kafka_host": 'http://localhost:3501',
-          "schema_registry": 'http://localhost:3502',
-          "fetch_all_versions": False,
-          "client_id": 'ConsumerErik',
-          "consume": None}
+        options_file = open("test_bed_options_for_tests.json", encoding="utf8")
+        options = json.loads(options_file.read())
+        options_file.close()
 
         test_bed_configuration = TestBedOptions(options)
         schema_publisher = SchemaPublisher(test_bed_configuration)

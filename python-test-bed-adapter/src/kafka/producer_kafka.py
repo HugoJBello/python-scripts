@@ -1,9 +1,9 @@
-from models.event_hook import EventHook
+from event_hook import EventHook
 from pykafka import KafkaClient
 import logging
 
 
-class ConsumerKafka():
+class ProducerKafka():
     def __init__(self, kafka_topic, kafka_host, from_off_set, client_id, avro_helper_key, avro_helper_value, on_message_handler):
         self.topic = kafka_topic
         self.on_message = EventHook()
