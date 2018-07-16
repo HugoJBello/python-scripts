@@ -12,19 +12,20 @@ class MyTestCase(unittest.TestCase):
     def test_consumer_using_adapter(self):
         self.was_any_message_obtained = False
 
-        options_file = open("test_bed_options_for_tests.json",encoding="utf8")
+        options_file = open("test_bed_options_for_tests_consumer.json",encoding="utf8")
         options = json.loads(options_file.read())
         options_file.close()
 
         test_bed_options = TestBedOptions(options)
         test_bed_adapter = TestBedAdapter(test_bed_options)
 
-        #We add the message handler
+        # We add the message handler
         test_bed_adapter.on_message += self.handle_message
 
+
         test_bed_adapter.initialize()
-        test_bed_adapter.kafka_managers["standard_cap"].listen_messages()
-        #test_bed_adapter.consumers["simulation-entity-item"].listen_messages()
+        topic=list(test_bed_adapter.kafka_managers.keys())[0]
+        test_bed_adapter.kafka_managers[topic].listen_messages()
 
         self.assertEqual(True, True)
 

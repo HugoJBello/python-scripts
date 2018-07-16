@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
     def test_consumer_from_adapter(self):
         self.was_any_message_obtained = False
 
-        options_file = open("test_bed_options_for_tests.json", encoding="utf8")
+        options_file = open("test_bed_options_for_tests_consumer.json", encoding="utf8")
         options = json.loads(options_file.read())
         options_file.close()
 
@@ -30,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         t.start()
 
         # wait 30 seconds for the thread to finish its work
-        t.join(5)
+        t.join(30)
         if t.is_alive():
             print
             "thread is not done, setting event to kill thread."
