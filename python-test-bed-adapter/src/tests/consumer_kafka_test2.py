@@ -1,24 +1,26 @@
 import unittest
-import unittest
 import sys
 sys.path.append("..")
 import os
-from models.test_bed_options import TestBedOptions
-from models.consumer_kafka import ConsumerKafka
-from models.avro_schema_helper import AvroSchemaHelper
+from test_bed_options import TestBedOptions
+from kafka_manager import KafkaManager
+from avro_schema_helper import AvroSchemaHelper
 
 import logging
 logging.basicConfig(level=logging.INFO)
 
 class MyTestCase(unittest.TestCase):
+
+    @unittest.skip("This test can use an outdated version of your schema")
     def test_something(self):
         options ={
-          "auto_register_schemas":False,
+          "auto_register_schemas": False,
           #"kafka_host": 'driver-testbed.eu:3501',
           #"schema_registry": 'http://driver-testbed.eu:3502',
           "kafka_host": '127.0.0.1:3501',
           "schema_registry": 'http://localhost:3502',
           "fetch_all_versions": False,
+          "from_off_set":True,
           "client_id": 'ConsumerErik',
           "consume": None}
 
@@ -33,12 +35,13 @@ class MyTestCase(unittest.TestCase):
         topic = b"simulation-entity-item"
         client_id = test_bed_options.client_id
 
-        avro_schema_helper_value = AvroSchemaHelper(schema_sr_value, topic)
-        avro_schema_helper_key = AvroSchemaHelper(schema_sr_key, topic)
+        avro_helper_value = AvroSchemaHelper(schema_sr_value, topic)
+        avro_helper_key = AvroSchemaHelper(schema_sr_key, topic)
 
         on_message_handler = lambda x: logging.info(x)
 
-        consumer_kafka = ConsumerKafka(topic, test_bed_options, on_message_handler, avro_schema_helper_key, avro_schema_helper_value)
+        consumer_kafka = KafkaManager(topic, test_bed_options.kafka_host, test_bed_options.from_off_set, client_id, avro_helper_key,
+                                      avro_helper_value, on_message_handler)
 
         consumer_kafka.listen_messages()
 

@@ -1,51 +1,35 @@
-import asyncio
 import logging
 import requests
-from models.avro_schema_helper import AvroSchemaHelper
+from avro_schema_helper import AvroSchemaHelper
+from registry.schema_access import SchemaAccess
 
-class SchemaRegistry:
+
+class SchemaRegistry(SchemaAccess):
     def __init__(self, test_bed_options):
-
+        super().__init__(test_bed_options)
         self.topics = []
         self.fetched_schemas = []
         self.schema_available = False
         self.selected_topics = {"consume": test_bed_options.consume, "produce": test_bed_options.produce}
         self.fetch_all_versions = test_bed_options.fetch_all_versions
-        self.schema_url = test_bed_options.schema_registry
 
+        #A dictionary with all the topic keys and the avro helpers. This will be necessary to decode the kafka messages
         self.keys_schema = {}
+        #A dictionary with all the topic values and the avro helpers. This will be necessary to decode the kafka messages
         self.values_schema = {}
         self.schema_meta = {}
 
     def start_process(self):
-        self.loop = asyncio.get_event_loop()
-        is_schema_registry_available_task = self.loop.create_task(self.is_schema_registry_available())
-        self.loop.run_until_complete(asyncio.wait([is_schema_registry_available_task]))
+        self.is_schema_registry_available()
 
         if self.schema_available:
-            fetch_all_schema_topics_task = self.loop.create_task(self.fetch_all_schema_topics())
-            self.loop.run_until_complete(asyncio.wait([fetch_all_schema_topics_task]))
+            self.fetch_all_schema_topics()
 
             fetch_schema_tasks =[]
             for topic in self.topics:
-                fetch_schema_tasks.append(self.loop.create_task(self.fetch_schema(topic)))
+                self.fetch_schema(topic)
 
-            self.loop.run_until_complete(asyncio.wait(fetch_schema_tasks))
-
-
-    async def is_schema_registry_available(self):
-        url = self.schema_url
-        logging.info("schema available")
-        self.schema_available = True
-        try:
-            logging.info("checking schema in url :" + url)
-            response = requests.get(url)
-            self.schema_available = True
-        except:
-            logging.error("Error fetching url:" + url)
-            self.schema_available = False
-
-    async def fetch_all_schema_topics(self):
+    def fetch_all_schema_topics(self):
         fetch_all_schema_topics_url = self.schema_url + "/subjects"
         try:
             logging.info("Fetching all schemas using url:" + fetch_all_schema_topics_url)
@@ -56,7 +40,7 @@ class SchemaRegistry:
 
 
 
-    async def fetch_all_schema_versions(self, topic):
+    def fetch_all_schema_versions(self, topic):
         fetch_all_versions_url = self.schema_url + '/subjects/' + topic + '/versions'
         try:
             logging.info("Fetching all schema versions using url:" + fetch_all_versions_url)
@@ -67,8 +51,8 @@ class SchemaRegistry:
             return None
 
 
-    async def fetch_schema(self, topic):
-        schema_topic_latest = await self.fetch_lastest_version(topic)
+    def fetch_schema(self, topic):
+        schema_topic_latest = self.fetch_lastest_version(topic)
         topic = schema_topic_latest["topic"]
         version = schema_topic_latest["version"]
         parts = topic.split('-')
@@ -89,7 +73,7 @@ class SchemaRegistry:
         except:
             logging.error("Error fetching latest schema using url:" + fetch_schema_url)
 
-    async def fetch_lastest_version(self, topic):
+    def fetch_lastest_version(self, topic):
         fetch_latest_versions_url = self.schema_url + '/subjects/' + topic + '/versions/latest'
         try:
             logging.info("Fetching latest schema versions using url:" + fetch_latest_versions_url)
@@ -105,7 +89,7 @@ class SchemaRegistry:
         avro_helper = AvroSchemaHelper(schema_topic["response_raw"]["schema"], topic)
         schema_topic["avro_helper"] = avro_helper
 
-        item = {"avro_helper": schema_topic["avro_helper"], "sr_id": schema_topic["response_raw"]["id"]}
+        item = {"avro_helper": avro_helper, "sr_id": schema_topic["response_raw"]["id"]}
         if schema_topic["schema_type"].lower() == 'key':
             self.keys_schema[topic] = item
         else:
