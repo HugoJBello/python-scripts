@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/.idea/data_analisis_electoral_data.iml" filepath="$PROJECT_DIR$/../../python-data-projects-examples/data_analisis_electoral_data/.idea/data_analisis_electoral_data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python-pandas-ex-stachoverflow.iml" filepath="$PROJECT_DIR$/.idea/python-pandas-ex-stachoverflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/.idea/resultados_a_shapefile_gdal_python.iml" filepath="$PROJECT_DIR$/../../python-data-projects-examples/resultados_a_shapefile_gdal_python/.idea/resultados_a_shapefile_gdal_python.iml" />
+    </modules>
+  </component>
+</project>
